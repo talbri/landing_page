@@ -217,7 +217,10 @@
                         </div>
                         <div>
                             <h3 class="text-xl font-bold mb-2 text-gray-900">Pre talenty</h3>
-                            <p class="text-gray-700">Sprevádza procesom, spätná väzba. Priama cesta k zmysluplnej práci. Na Slovensku.</p>
+                            <p class="text-gray-700">
+                                Pomáhame mladým ľuďom na Slovensku lepšie vstúpiť na pracovný trh — so spätnou väzbou, podporou a prístupom k
+                                zmysluplným príležitostiam.
+                            </p>
                         </div>
                     </div>
 
@@ -229,7 +232,9 @@
                         </div>
                         <div>
                             <h3 class="text-xl font-bold mb-2 text-gray-900">Pre firmy</h3>
-                            <p class="text-gray-700">Overení kandidáti s overeným potenciálom pripravení na vstup na pracovný trh.</p>
+                            <p class="text-gray-700">
+                                Prinášame vám overených mladých ľudí s potenciálom, pripravených na vstup do pracovného života.
+                            </p>
                         </div>
                     </div>
 
@@ -241,9 +246,7 @@
                         </div>
                         <div>
                             <h3 class="text-xl font-bold mb-2 text-gray-900">Pre rozvojové organizácie</h3>
-                            <p class="text-gray-700">
-                                Spoločný ekosystém s merateľným dopadom. Ste kritickým partnerom v budovaní talentu na Slovensku
-                            </p>
+                            <p class="text-gray-700">Budujeme s vami ekosystém s merateľným dopadom, ktorý pomáha rozvíjať talent na Slovensku.</p>
                         </div>
                     </div>
                 </div>
@@ -825,26 +828,27 @@
             const mobileMenu = document.getElementById("mobile-menu");
 
             if (mobileMenuButton && mobileMenu) {
+                const setMobileMenuIcon = (iconName) => {
+                    mobileMenuButton.innerHTML = `<i data-feather="${iconName}" class="w-6 h-6"></i>`;
+                    feather.replace();
+                };
+
+                setMobileMenuIcon("menu");
+                mobileMenuButton.setAttribute("aria-expanded", "false");
+
                 mobileMenuButton.addEventListener("click", function () {
                     mobileMenu.classList.toggle("hidden");
-
-                    // Change icon between menu and X
-                    const icon = this.querySelector("i");
-                    if (mobileMenu.classList.contains("hidden")) {
-                        icon.setAttribute("data-feather", "menu");
-                    } else {
-                        icon.setAttribute("data-feather", "x");
-                    }
-                    feather.replace();
+                    const isHidden = mobileMenu.classList.contains("hidden");
+                    setMobileMenuIcon(isHidden ? "menu" : "x");
+                    this.setAttribute("aria-expanded", String(!isHidden));
                 });
 
                 // Close mobile menu when clicking on a link
                 mobileMenu.querySelectorAll("a").forEach((link) => {
                     link.addEventListener("click", function () {
                         mobileMenu.classList.add("hidden");
-                        const icon = mobileMenuButton.querySelector("i");
-                        icon.setAttribute("data-feather", "menu");
-                        feather.replace();
+                        setMobileMenuIcon("menu");
+                        mobileMenuButton.setAttribute("aria-expanded", "false");
                     });
                 });
             }

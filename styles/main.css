@@ -348,15 +348,11 @@ footer .copyright {
 
 /* Responsive */
 @media (max-width: 768px) {
-    header nav {
+    header nav:not(#mobile-menu) {
         display: none;
     }
 
     .mobile-menu-btn {
-        display: block;
-    }
-
-    header .mobile-menu {
         display: block;
     }
 
