@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="sk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Pre firmy | TalBri</title>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="/static/favicon.ico" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet" />
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: "#541a2e",
+                            secondary: "#242f49",
+                        },
+                    },
+                },
+            };
+        </script>
+        <link
+            href="../styles/main.css"
+            rel="stylesheet" />
+    </head>
+    <body class="bg-white text-gray-800">
+        <!-- Header -->
+        <header class="bg-white shadow-sm py-3 md:py-4 sticky top-0 z-50">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center">
+                    <div class="text-xl md:text-2xl font-bold">
+                        <span class="text-primary">TalBri</span>
+                    </div>
+                    <button
+                        id="mobile-menu-button"
+                        class="md:hidden text-gray-600 focus:outline-none">
+                        <i
+                            data-feather="menu"
+                            class="w-6 h-6"></i>
+                    </button>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:block mt-4">
+                    <ul class="flex space-x-6">
+                        <li>
+                            <a
+                                href="../index.html"
+                                class="text-gray-600 hover:text-primary transition"
+                                >Hlavná stránka</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="../nasa-misia/index.html"
+                                class="text-gray-600 hover:text-primary transition"
+                                >Naša misia</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="../pre-mladych/index.html"
+                                class="text-gray-600 hover:text-primary transition"
+                                >Pre mladých</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="index.html"
+                                class="text-primary font-semibold"
+                                >Pre firmy</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="../pre-organizacie/index.html"
+                                class="text-gray-600 hover:text-primary transition"
+                                >Pre organizácie</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Menu -->
+                <nav
+                    id="mobile-menu"
+                    class="hidden md:hidden mt-4 pb-4">
+                    <ul class="flex flex-col space-y-3">
+                        <li>
+                            <a
+                                href="../index.html"
+                                class="block text-gray-600 hover:text-primary transition py-2 border-b border-gray-100"
+                                >Hlavná stránka</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="../nasa-misia/index.html"
+                                class="block text-gray-600 hover:text-primary transition py-2 border-b border-gray-100"
+                                >Naša misia</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="../pre-mladych/index.html"
+                                class="block text-gray-600 hover:text-primary transition py-2 border-b border-gray-100"
+                                >Pre mladých</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="index.html"
+                                class="block text-primary font-semibold py-2"
+                                >Pre firmy</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="../pre-organizacie/index.html"
+                                class="block text-gray-600 hover:text-primary transition py-2"
+                                >Pre organizácie</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="relative py-16 md:py-24 bg-gradient-to-r from-primary/40 to-secondary/20">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+                    <span class="text-primary">Pre firmy</span>
+                </h1>
+                <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-8 text-gray-700">Budujeme funkčný talentový ekosystém na Slovensku</p>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="container mx-auto px-4 py-12 max-w-4xl">
+            <!-- Hero Quote Section -->
+            <section class="mb-12">
+                <div class="bg-white p-8 md:p-12 rounded-2xl shadow-sm border-2 border-gray-100 text-center">
+                    <p class="text-xl md:text-2xl text-gray-700 italic mb-4">
+                        Aby mladý talent nemusel odchádzať len preto, že sa nevie stretnúť s príležitosťou.
+                    </p>
+                    <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                    <p class="text-lg text-gray-700 mb-6">
+                        TalBri je pilotný program, ktorým zavádzame a overujeme nový spôsob fungovania trhu s mladým talentom na Slovensku.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Nejde o teóriu a víziu na papieri. <b>Tento program sa stará o proces</b> medzi mladým talentom, rozvojovými organizáciami a
+                        firmami.
+                    </p>
+                </div>
+            </section>
+
+            <!-- What Is Common -->
+            <section class="mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Čo je spoločné pre všetkých</h2>
+
+                <p class="text-gray-700 mb-6 leading-relaxed">Ide o časovo ohraničený pilot, všetci vstupujú s vedomím, že:</p>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center p-6 bg-primary/5 rounded-xl">
+                        <i
+                            data-feather="activity"
+                            class="w-8 h-8 text-primary mx-auto mb-3"></i>
+                        <p class="font-bold text-gray-900">testujeme</p>
+                    </div>
+                    <div class="text-center p-6 bg-secondary/5 rounded-xl">
+                        <i
+                            data-feather="map"
+                            class="w-8 h-8 text-secondary mx-auto mb-3"></i>
+                        <p class="font-bold text-gray-900">mapujeme</p>
+                    </div>
+                    <div class="text-center p-6 bg-primary/5 rounded-xl">
+                        <i
+                            data-feather="book-open"
+                            class="w-8 h-8 text-primary mx-auto mb-3"></i>
+                        <p class="font-bold text-gray-900">učíme sa</p>
+                    </div>
+                </div>
+                <div class="mt-8 bg-gradient-to-r from-primary to-secondary p-6 rounded-xl text-white text-center">
+                    <p class="text-lg font-medium">
+                        Feedback nie je doplnok, ale je základ.<br />
+                        Dáta majú väčšiu váhu než dojmy.
+                    </p>
+                </div>
+            </section>
+
+            <section class="mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Naša rola</h2>
+
+                <p class="text-gray-700 mb-6 leading-relaxed text-xl">Sme facilitátori procesu, aktívna súčasť systému.</p>
+                <div class="flex flex-col gap-6">
+                    <div class="flex items-start gap-3">
+                        <i
+                            data-feather="link"
+                            class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
+                        <p class="text-gray-700">Prepájame strany.</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i
+                            data-feather="shield"
+                            class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
+                        <p class="text-gray-700">Strážime férovosť.</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i
+                            data-feather="check-circle"
+                            class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
+                        <p class="text-gray-700">Overujeme všetky strany - mladých, firmy, rozvojové organizácie.</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i
+                            data-feather="bar-chart"
+                            class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
+                        <p class="text-gray-700">Zbierame a vyhodnocujeme dáta.</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i
+                            data-feather="trending-up"
+                            class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
+                        <p class="text-gray-700">Poskytujeme odporúčania pre zlepšenie.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- What You Get -->
+            <section class="mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Čo má z toho vaša firma?</h2>
+
+                <h3 class="text-xl md:text-2xl font-bold mb-6 text-secondary">Lepší hiring nezačína kvantom CV-čiek, ale lepším filtrom.</h3>
+                <p>
+                    Slovenské firmy netrpia nedostatkom uchádzačov. Trpia <strong> nedostatkom relevantných kandidátov</strong> a procesmi, ktoré
+                    stoja čas, peniaze a energiu.
+                </p>
+            </section>
+
+            <!-- Why TalBri -->
+            <section class="mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Prečo TalBri - čo sme a čo nie sme</h2>
+
+                <p class="text-gray-700 mb-6 leading-relaxed text-xl">
+                    Nie sme pracovný portál ani agentúra, ktorá posiela desiatky profilov. Sme partner, ktorý predfiltruje mladý talent s potenciálom
+                    a zapálením.
+                </p>
+                <div class="flex flex-col">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Prečo to robíme</h2>
+                    <p class="mb-6">Zbierame reálne dáta z trhu. Nie PR, nie domnienky.</p>
+                    <h3 class="text-lg md:text-xl font-bold text-secondary">Cieľom je:</h3>
+                    <div class="p-6 mb-6">
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <i
+                                    data-feather="target"
+                                    class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
+                                <p class="text-gray-700">efektívne získavanie a uplatnenie mladého talentu vo vašom biznise,</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i
+                                    data-feather="target"
+                                    class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
+                                <p class="text-gray-700">menej náhodných hire a viac strategický talentový manažment,</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i
+                                    data-feather="target"
+                                    class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
+                                <p class="text-gray-700">viac udržateľných rozhodnutí,</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i
+                                    data-feather="target"
+                                    class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
+                                <p class="text-gray-700">systém, ktorý vám šetrí čas aj peniaze,</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Čo od nás dostanete</h2>
+                    <div class="bg-secondary/5 p-6 rounded-xl">
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <i
+                                    data-feather="gift"
+                                    class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
+                                <p class="text-gray-700">
+                                    maximálne <strong>3 starostlivo vybraných a overených kandidátov na jednu pozíciu</strong>,
+                                </p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i
+                                    data-feather="gift"
+                                    class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
+                                <p class="text-gray-700">
+                                    kandidátov, ktorí preukázali potenciál a zapálenie, prešli psychometrickým testovaním a pohovorom na našej strane,
+                                </p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i
+                                    data-feather="gift"
+                                    class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
+                                <p class="text-gray-700">anonymizovaný proces až do vášho pozvania na priame interview,</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i
+                                    data-feather="gift"
+                                    class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
+                                <p class="text-gray-700">výrazne nižší time-to-hire.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- What We Need -->
+            <section class="mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Čo od vás potrebujeme</h2>
+
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                    Vieme testovať a overovať efektivitu systému len vtedy, keď je každá strana zapojená ako má byť. <br />
+                </p>
+                <p class="mb-2">Preto je nevyhnutné:</p>
+                <div class="space-y-4 mb-6 ml-6 list-disc">
+                    <div class="flex items-start gap-3">
+                        <i
+                            data-feather="message-square"
+                            class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
+                        <p class="text-gray-700"><strong>poskytovať nám feedback</strong> ku každému zúčastnenému kandidátovi</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i
+                            data-feather="bar-chart-2"
+                            class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
+                        <p class="text-gray-700"><strong>spolupracovať na vyhodnotení procesu</strong></p>
+                    </div>
+                </div>
+
+                <p>Na oplátku, popri kvalitnom overenom mladom talente z celého Slovenska, od nás dostanete:</p>
+                <div class="mt-4">
+                    <ul class="space-y-4 ml-5 list-disc">
+                        <li class="flex items-start gap-3">
+                            <i
+                                data-feather="file-text"
+                                class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
+                            <p class="text-gray-700"><strong>spracovaný feedback na váš hiringový proces,</strong></p>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i
+                                data-feather="bar-chart"
+                                class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
+                            <p class="text-gray-700">dáta, čo funguje a kde strácate efektivitu,</p>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i
+                                data-feather="zap"
+                                class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
+                            <p class="text-gray-700">možnosť optimalizovať výberové procesy bez drahých experimentov.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Final CTA -->
+            <section class="mb-12">
+                <div class="bg-gradient-to-r from-primary to-secondary p-8 md:p-12 rounded-2xl text-center text-white">
+                    <p class="text-xl mb-4 italic">
+                        Toto nie je klasický nábor.<br />
+                        Je to test nového modelu.
+                    </p>
+                    <p class="text-lg mb-6 opacity-90">
+                        Preto, ak ste firma, ktorá rozumie a chce strategicky pracovať s mladým talentom a aktívne ho rozvíjať, pridajte sa do nášho
+                        pilotného programu.
+                    </p>
+                    <p class="text-xl font-medium mb-8">
+                        Budúcnosť trhu práce nevznikne sama.<br />
+                        Vznikne spoluprácou.<br />
+                        My sme začali.
+                    </p>
+                    <a
+                        href="mailto:info@talbri.eu"
+                        class="inline-block bg-white text-primary hover:bg-gray-100 font-semibold py-4 px-10 rounded-full transition text-lg">
+                        Kontaktujte nás
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-12">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-6 md:mb-0">
+                        <h3 class="text-2xl font-bold">
+                            <span class="text-primary">TalBri</span>
+                        </h3>
+                        <p class="mt-2 text-gray-400">Spájame slovenský talent s príležitosťami.</p>
+                    </div>
+                    <div class="flex space-x-6">
+                        <a
+                            href="mailto:info@talbri.eu"
+                            class="text-gray-400 hover:text-white transition">
+                            <i
+                                data-feather="mail"
+                                class="w-6 h-6"
+                                >info@talbri.eu</i
+                            >
+                        </a>
+                    </div>
+                </div>
+                <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+                    <p>
+                        ©
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        TalBri. Všetky práva vyhradené.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            feather.replace();
+
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById("mobile-menu-button");
+            const mobileMenu = document.getElementById("mobile-menu");
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener("click", function () {
+                    mobileMenu.classList.toggle("hidden");
+
+                    // Change icon between menu and X
+                    const icon = this.querySelector("i");
+                    if (mobileMenu.classList.contains("hidden")) {
+                        icon.setAttribute("data-feather", "menu");
+                    } else {
+                        icon.setAttribute("data-feather", "x");
+                    }
+                    feather.replace();
+                });
+
+                // Close mobile menu when clicking on a link
+                mobileMenu.querySelectorAll("a").forEach((link) => {
+                    link.addEventListener("click", function () {
+                        mobileMenu.classList.add("hidden");
+                        const icon = mobileMenuButton.querySelector("i");
+                        icon.setAttribute("data-feather", "menu");
+                        feather.replace();
+                    });
+                });
+            }
+        </script>
+    </body>
+</html>
