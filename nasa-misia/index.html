@@ -21,8 +21,13 @@
                 theme: {
                     extend: {
                         colors: {
-                            primary: "#541a2e",
-                            secondary: "#242f49",
+                            primary: "#0C0E1B",
+                            secondary: "#1F212D",
+                            "talbri-cyan": "#ACDEEA",
+                            "talbri-peach": "#FBE8E1",
+                            "talbri-orange": "#CE4614",
+                            "talbri-purple": "#522DCB",
+                            "talbri-bg": "#FDF1ED",
                         },
                     },
                 },
@@ -32,139 +37,35 @@
             href="../styles/main.css"
             rel="stylesheet" />
     </head>
-    <body class="bg-white text-gray-800">
-        <!-- Header -->
-        <header class="bg-white shadow-sm py-3 md:py-4 sticky top-0 z-50">
-            <div class="container mx-auto px-4">
-                <div class="flex justify-between items-center">
-                    <div class="text-xl md:text-2xl font-bold">
-                        <a
-                            href="../index.html"
-                            class="text-primary"
-                            >TalBri</a
-                        >
-                    </div>
-                    <button
-                        id="mobile-menu-button"
-                        class="md:hidden text-gray-600 focus:outline-none">
-                        <i
-                            data-feather="menu"
-                            class="w-6 h-6"></i>
-                    </button>
-                </div>
-
-                <!-- Desktop Navigation -->
-                <nav class="hidden md:block mt-4">
-                    <ul class="flex space-x-6">
-                        <li>
-                            <a
-                                href="../index.html"
-                                class="text-gray-600 hover:text-primary transition"
-                                >Hlavná stránka</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="index.html"
-                                class="text-primary font-semibold"
-                                >Naša misia</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="../pre-mladych/index.html"
-                                class="text-gray-600 hover:text-primary transition"
-                                >Pre mladých</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="../pre-firmy/index.html"
-                                class="text-gray-600 hover:text-primary transition"
-                                >Pre firmy</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="../pre-organizacie/index.html"
-                                class="text-gray-600 hover:text-primary transition"
-                                >Pre organizácie</a
-                            >
-                        </li>
-                    </ul>
-                </nav>
-
-                <!-- Mobile Menu -->
-                <nav
-                    id="mobile-menu"
-                    class="hidden md:hidden mt-4 pb-4">
-                    <ul class="flex flex-col space-y-3">
-                        <li>
-                            <a
-                                href="../index.html"
-                                class="block text-gray-600 hover:text-primary transition py-2 border-b border-gray-100"
-                                >Hlavná stránka</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="index.html"
-                                class="block text-primary font-semibold py-2"
-                                >Naša misia</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="../pre-mladych/index.html"
-                                class="block text-gray-600 hover:text-primary transition py-2 border-b border-gray-100"
-                                >Pre mladých</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="../pre-firmy/index.html"
-                                class="block text-gray-600 hover:text-primary transition py-2 border-b border-gray-100"
-                                >Pre firmy</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="../pre-organizacie/index.html"
-                                class="block text-gray-600 hover:text-primary transition py-2"
-                                >Pre organizácie</a
-                            >
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+    <body class="bg-white text-secondary" data-base-path="../" data-page="nasa-misia">
+        <div id="header-root"></div>
 
         <!-- Hero Section -->
-        <section class="relative py-16 md:py-24 bg-gradient-to-r from-primary/40 to-secondary/20">
+        <section class="relative py-16 md:py-24 bg-talbri-peach overflow-hidden">
             <div class="container mx-auto px-4 text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-                    <span class="text-primary">Naša misia</span>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-primary relative z-10">
+                    <span>Naša misia</span>
                 </h1>
-                <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-8 text-gray-700">Budujeme funkčný talentový ekosystém na Slovensku</p>
+                <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-8 text-secondary relative z-10">Budujeme funkčný talentový ekosystém na Slovensku</p>
             </div>
         </section>
 
         <!-- Main Content -->
-        <main class="container mx-auto px-4 py-12 max-w-4xl">
+        <main class="container mx-auto px-4 py-12 max-w-4xl bg-white">
             <!-- Hero Quote Section -->
             <section class="mb-12">
-                <div class="bg-white p-8 md:p-12 rounded-2xl shadow-sm border-2 border-gray-100 text-center">
-                    <p class="text-xl md:text-2xl text-gray-700 italic mb-4">
+                <div class="bg-white p-8 md:p-12 shadow-sm border-2 border-talbri-peach/30 text-center">
+                    <p class="text-xl md:text-2xl text-secondary italic mb-4">
                         Aby mladý talent nemusel odchádzať len preto, že sa nevie stretnúť s príležitosťou.
                     </p>
                     <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
-                    <p class="text-lg text-gray-700">
+                    <p class="text-lg text-secondary">
                         Nie sme pracovný portál, ani ďalšia rozvojová organizácia. Sme systém, ktorý prepája potenciál s reálnym uplatnením.
                     </p>
                     <div class="flex flex-col flex-wrap justify-center gap-4 mt-8">
-                        <span class="px-4 py-2 bg-primary/10 text-primary rounded-full font-medium">Aktívny matching</span>
-                        <span class="px-4 py-2 bg-secondary/10 text-secondary rounded-full font-medium">Dáta namiesto dojmov</span>
-                        <span class="px-4 py-2 bg-primary/10 text-primary rounded-full font-medium">Spolupráca namiesto konkurencie</span>
+                        <span class="px-4 py-2 bg-primary/10 text-primary font-medium">Aktívny matching</span>
+                        <span class="px-4 py-2 bg-secondary/10 text-secondary font-medium">Dáta namiesto dojmov</span>
+                        <span class="px-4 py-2 bg-primary/10 text-primary font-medium">Spolupráca namiesto konkurencie</span>
                     </div>
                     <p class="text-xl md:text-xl font-bold text-primary mt-8">Vitaj v TalBri!</p>
                 </div>
@@ -174,7 +75,7 @@
             <section class="mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Problém, ktorý všetci poznáme, ale nikto ho nerieši systémovo</h2>
                 <div>
-                    <p class="text-gray-700 mb-6 leading-relaxed">
+                    <p class="text-secondary mb-6 leading-relaxed">
                         Slovensko neprichádza o mladých ľudí preto, že by tu nebolo pre nich miesto. Prichádza o nich kvôli medzerám v systéme, ktoré
                         spôsobujú, že:
                     </p>
@@ -183,25 +84,25 @@
                             <i
                                 data-feather="alert-circle"
                                 class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
-                            <p class="text-gray-700"><strong>mladí ľudia nevidia jasnú a dôveryhodnú cestu</strong> pre svoje uplatnenie,</p>
+                            <p class="text-secondary"><strong>mladí ľudia nevidia jasnú a dôveryhodnú cestu</strong> pre svoje uplatnenie,</p>
                         </li>
                         <li class="flex items-start gap-3">
                             <i
                                 data-feather="alert-circle"
                                 class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
-                            <p class="text-gray-700"><strong>pracovný trh je pomalý, frustrujúci a neprehľadný</strong>,</p>
+                            <p class="text-secondary"><strong>pracovný trh je pomalý, frustrujúci a neprehľadný</strong>,</p>
                         </li>
                         <li class="flex items-start gap-3">
                             <i
                                 data-feather="alert-circle"
                                 class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
-                            <p class="text-gray-700"><strong>firmy trávia stovky hodín zahltení nerelevantnými CV</strong>,</p>
+                            <p class="text-secondary"><strong>firmy trávia stovky hodín zahltení nerelevantnými CV</strong>,</p>
                         </li>
                         <li class="flex items-start gap-3">
                             <i
                                 data-feather="alert-circle"
                                 class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
-                            <p class="text-gray-700">
+                            <p class="text-secondary">
                                 <strong>rozvojové organizácie robia skvelú prácu</strong> v poskytovaní kritických rozvojových aktivít, ktoré chýbajú
                                 v školstve, ale nevidia celý dopad,
                             </p>
@@ -210,14 +111,14 @@
                             <i
                                 data-feather="alert-circle"
                                 class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
-                            <p class="text-gray-700">
+                            <p class="text-secondary">
                                 <strong>nikto netrackuje</strong>, odkiaľ a kam mladý talent reálne ide a čo pre jeho udržanie a uplatnenie
                                 (ne)funguje.
                             </p>
                         </li>
                     </ul>
-                    <div class="bg-secondary/20 border-l-4 border-primary p-6 mt-8 rounded-r-lg">
-                        <p class="text-gray-700 font-medium">
+                    <div class="bg-secondary/20 border-l-4 border-primary p-6 mt-8">
+                        <p class="text-secondary font-medium">
                             Výsledkom je <strong>stratený potenciál, premárnené peniaze a frustrácia na všetkých stranách</strong>.
                         </p>
                     </div>
@@ -228,7 +129,7 @@
             <section class="mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Naše riešenie: Systém nad existujúcim ne-systémom</h2>
                 <div>
-                    <p class="text-gray-700 mb-6 leading-relaxed text-xl">
+                    <p class="text-secondary mb-6 leading-relaxed text-xl">
                         Nevymýšľame nové koleso. Prepájame tie, ktoré už existujú, ale netočia sa spolu.
                     </p>
                 </div>
@@ -238,7 +139,7 @@
             <section class="mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Čo je TalBri</h2>
                 <div>
-                    <p class="text-gray-700 mb-6 leading-relaxed">
+                    <p class="text-secondary mb-6 leading-relaxed">
                         TalBri je pilotný program, ktorým testujeme nový model fungovania trhu práce s mladým talentom. Zameriavame sa na:
                     </p>
                     <ul class="space-y-4">
@@ -246,31 +147,31 @@
                             <i
                                 data-feather="target"
                                 class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
-                            <p class="text-gray-700"><strong>top 2-20 % mladých ľudí </strong> (Paretov Princíp)</p>
+                            <p class="text-secondary"><strong>top 2-20 % mladých ľudí </strong> (Paretov Princíp)</p>
                         </li>
                         <li class="flex items-start gap-3">
                             <i
                                 data-feather="users"
                                 class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
-                            <p class="text-gray-700"><strong>aktívne predmatchovanie s firmami</strong>,</p>
+                            <p class="text-secondary"><strong>aktívne predmatchovanie s firmami</strong>,</p>
                         </li>
                         <li class="flex items-start gap-3">
                             <i
                                 data-feather="bar-chart"
                                 class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
-                            <p class="text-gray-700"><strong>reálne dáta, nie PR</strong>,</p>
+                            <p class="text-secondary"><strong>reálne dáta, nie PR</strong>,</p>
                         </li>
                         <li class="flex items-start gap-3">
                             <i
                                 data-feather="zap"
                                 class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
-                            <p class="text-gray-700">
+                            <p class="text-secondary">
                                 <strong>rýchle učenie, rýchle rozhodovanie.</strong>
                             </p>
                         </li>
                     </ul>
-                    <div class="bg-secondary/20 border-l-4 border-primary p-6 mt-8 rounded-r-lg">
-                        <p class="text-gray-700 font-medium">Do júna 2026 overujeme hypotézy. Keď to bude fungovať, škálujeme.</p>
+                    <div class="bg-secondary/20 border-l-4 border-primary p-6 mt-8">
+                        <p class="text-secondary font-medium">Do júna 2026 overujeme hypotézy. Keď to bude fungovať, škálujeme.</p>
                     </div>
                 </div>
             </section>
@@ -281,77 +182,77 @@
 
                 <div class="space-y-6">
                     <!-- Young Talent -->
-                    <div class="bg-white p-8 rounded-2xl border-2 border-primary/20 shadow-sm">
+                    <div class="bg-white p-8 border-2 border-primary/20 shadow-sm">
                         <div class="flex items-center gap-4 mb-6">
-                            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                            <div class="w-16 h-16 bg-primary flex items-center justify-center flex-shrink-0">
                                 <i
                                     data-feather="user"
                                     class="w-8 h-8 text-white"></i>
                             </div>
-                            <h3 class="text-2xl font-bold text-gray-900">Mladý talent</h3>
+                            <h3 class="text-2xl font-bold text-primary">Mladý talent</h3>
                         </div>
                         <ul class="space-y-3">
                             <li class="flex items-start gap-3">
                                 <i
                                     data-feather="check-circle"
                                     class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
-                                <p class="text-gray-700"><strong>sprevádzaný úvod na trh práce</strong></p>
+                                <p class="text-secondary"><strong>sprevádzaný úvod na trh práce</strong></p>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i
                                     data-feather="check-circle"
                                     class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
-                                <p class="text-gray-700"><strong>kariérny coaching</strong></p>
+                                <p class="text-secondary"><strong>kariérny coaching</strong></p>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i
                                     data-feather="check-circle"
                                     class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
-                                <p class="text-gray-700"><strong>aktívny matching so zmysluplnými príležitosťami</strong></p>
+                                <p class="text-secondary"><strong>aktívny matching so zmysluplnými príležitosťami</strong></p>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i
                                     data-feather="check-circle"
                                     class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
-                                <p class="text-gray-700"><strong>hlas, ktorý je na trhu práce počuť</strong></p>
+                                <p class="text-secondary"><strong>hlas, ktorý je na trhu práce počuť</strong></p>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Companies -->
-                    <div class="bg-white p-8 rounded-2xl border-2 border-secondary/20 shadow-sm">
+                    <div class="bg-white p-8 border-2 border-secondary/20 shadow-sm">
                         <div class="flex items-center gap-4 mb-6">
-                            <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                            <div class="w-16 h-16 bg-secondary flex items-center justify-center flex-shrink-0">
                                 <i
                                     data-feather="briefcase"
                                     class="w-8 h-8 text-white"></i>
                             </div>
-                            <h3 class="text-2xl font-bold text-gray-900">Firmy</h3>
+                            <h3 class="text-2xl font-bold text-primary">Firmy</h3>
                         </div>
                         <ul class="space-y-3">
                             <li class="flex items-start gap-3">
                                 <i
                                     data-feather="check-circle"
                                     class="w-5 h-5 text-secondary flex-shrink-0 mt-1"></i>
-                                <p class="text-gray-700"><strong>výrazne nižší time-to-hire</strong></p>
+                                <p class="text-secondary"><strong>výrazne nižší time-to-hire</strong></p>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i
                                     data-feather="check-circle"
                                     class="w-5 h-5 text-secondary flex-shrink-0 mt-1"></i>
-                                <p class="text-gray-700"><strong>prístup k zapálenému mladému talentu z celého Slovenska</strong></p>
+                                <p class="text-secondary"><strong>prístup k zapálenému mladému talentu z celého Slovenska</strong></p>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i
                                     data-feather="check-circle"
                                     class="w-5 h-5 text-secondary flex-shrink-0 mt-1"></i>
-                                <p class="text-gray-700"><strong>žiadny spam z portálov</strong></p>
+                                <p class="text-secondary"><strong>žiadny spam z portálov</strong></p>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i
                                     data-feather="check-circle"
                                     class="w-5 h-5 text-secondary flex-shrink-0 mt-1"></i>
-                                <p class="text-gray-700">
+                                <p class="text-secondary">
                                     <strong>práca s partnerom, ktorý rozumie talentovým a študentským cyklom, aj financiám</strong>
                                 </p>
                             </li>
@@ -359,71 +260,71 @@
                     </div>
 
                     <!-- Development Organizations -->
-                    <div class="bg-white p-8 rounded-2xl border-2 border-primary/20 shadow-sm">
+                    <div class="bg-white p-8 border-2 border-primary/20 shadow-sm">
                         <div class="flex items-center gap-4 mb-6">
-                            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                            <div class="w-16 h-16 bg-primary flex items-center justify-center flex-shrink-0">
                                 <i
                                     data-feather="heart"
                                     class="w-8 h-8 text-white"></i>
                             </div>
-                            <h3 class="text-2xl font-bold text-gray-900">Rozvojové organizácie a akadémia</h3>
+                            <h3 class="text-2xl font-bold text-primary">Rozvojové organizácie a akadémia</h3>
                         </div>
                         <ul class="space-y-3">
                             <li class="flex items-start gap-3">
                                 <i
                                     data-feather="check-circle"
                                     class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
-                                <p class="text-gray-700"><strong>podiel na zisku z hire</strong></p>
+                                <p class="text-secondary"><strong>podiel na zisku z hire</strong></p>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i
                                     data-feather="check-circle"
                                     class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
-                                <p class="text-gray-700"><strong>jasné dáta o dopade</strong></p>
+                                <p class="text-secondary"><strong>jasné dáta o dopade</strong></p>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i
                                     data-feather="check-circle"
                                     class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
-                                <p class="text-gray-700"><strong>silnejšie postavenie v talentovom ekosystéme</strong></p>
+                                <p class="text-secondary"><strong>silnejšie postavenie v talentovom ekosystéme</strong></p>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i
                                     data-feather="check-circle"
                                     class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
-                                <p class="text-gray-700"><strong>angažovanosť absolventov</strong></p>
+                                <p class="text-secondary"><strong>angažovanosť absolventov</strong></p>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Public Sector -->
-                    <div class="bg-white p-8 rounded-2xl border-2 border-secondary/20 shadow-sm">
+                    <div class="bg-white p-8 border-2 border-secondary/20 shadow-sm">
                         <div class="flex items-center gap-4 mb-6">
-                            <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                            <div class="w-16 h-16 bg-secondary flex items-center justify-center flex-shrink-0">
                                 <i
                                     data-feather="globe"
                                     class="w-8 h-8 text-white"></i>
                             </div>
-                            <h3 class="text-2xl font-bold text-gray-900">Verejný sektor</h3>
+                            <h3 class="text-2xl font-bold text-primary">Verejný sektor</h3>
                         </div>
                         <ul class="space-y-3">
                             <li class="flex items-start gap-3">
                                 <i
                                     data-feather="check-circle"
                                     class="w-5 h-5 text-secondary flex-shrink-0 mt-1"></i>
-                                <p class="text-gray-700"><strong>uplatňovanie zdrojov, kde to má zmysel</strong></p>
+                                <p class="text-secondary"><strong>uplatňovanie zdrojov, kde to má zmysel</strong></p>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i
                                     data-feather="check-circle"
                                     class="w-5 h-5 text-secondary flex-shrink-0 mt-1"></i>
-                                <p class="text-gray-700"><strong>reálna práca s mladým talentom od A po Z</strong></p>
+                                <p class="text-secondary"><strong>reálna práca s mladým talentom od A po Z</strong></p>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i
                                     data-feather="check-circle"
                                     class="w-5 h-5 text-secondary flex-shrink-0 mt-1"></i>
-                                <p class="text-gray-700"><strong>strategické partnerstvo namiesto izolovaných projektov</strong></p>
+                                <p class="text-secondary"><strong>strategické partnerstvo namiesto izolovaných projektov</strong></p>
                             </li>
                         </ul>
                     </div>
@@ -436,7 +337,7 @@
 
                 <div class="flex flex-col gap-8">
                     <div>
-                        <ul class="space-y-3 text-gray-700">
+                        <ul class="space-y-3 text-secondary">
                             <li class="flex items-start gap-2">
                                 <i
                                     data-feather="x"
@@ -464,8 +365,8 @@
                                 <i
                                     data-feather="check-circle"
                                     class="w-5 h-5 text-green-500 flex-shrink-0 mt-1"></i>
-                                <h5 class="font-bold text-gray-900 mb-1">Zameranie:</h5>
-                                <p class="text-gray-700">
+                                <h5 class="font-bold text-primary mb-1">Zameranie:</h5>
+                                <p class="text-secondary">
                                     mladý talent vo veku medzi 18 (v pilotnej fáze programu) - 30 rokov, ktorý preukázal potenciál
                                 </p>
                             </li>
@@ -473,15 +374,15 @@
                                 <i
                                     data-feather="check-circle"
                                     class="w-5 h-5 text-green-500 flex-shrink-0 mt-1"></i>
-                                <h5 class="font-bold text-gray-900 mb-1">Prístup:</h5>
-                                <p class="text-gray-700">spájame, učíme sa spoločne, robíme to ľudsky a s rastovým myslením v každom kroku procesu</p>
+                                <h5 class="font-bold text-primary mb-1">Prístup:</h5>
+                                <p class="text-secondary">spájame, učíme sa spoločne, robíme to ľudsky a s rastovým myslením v každom kroku procesu</p>
                             </li>
                             <li class="flex items-start gap-2">
                                 <i
                                     data-feather="check-circle"
                                     class="w-5 h-5 text-green-500 flex-shrink-0 mt-1"></i>
-                                <h5 class="font-bold text-gray-900 mb-1">Cieľ:</h5>
-                                <p class="text-gray-700">
+                                <h5 class="font-bold text-primary mb-1">Cieľ:</h5>
+                                <p class="text-secondary">
                                     nastaviť efektívny talentový ekosystém tak, aby mladý talent neodchádzal len preto, že sa nevie stretnúť s
                                     príležitosťou
                                 </p>
@@ -489,8 +390,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="bg-secondary/20 border-l-4 border-primary p-6 mt-8 rounded-r-lg">
-                    <p class="text-gray-700 font-medium">Sme facilitátori, budujeme mosty a sprevádzame pracovným trhom.</p>
+                <div class="bg-secondary/20 border-l-4 border-primary p-6 mt-8">
+                    <p class="text-secondary font-medium">Sme facilitátori, budujeme mosty a sprevádzame pracovným trhom.</p>
                     <p class="pt-8">Spájame ľudí, ktorí chcú férovo spolupracovať. Bez ega. Bez politiky. S dátami. S víziou pre lepšie Slovensko.</p>
                 </div>
             </section>
@@ -501,44 +402,44 @@
 
                 <div class="space-y-6">
                     <h3 class="text-2xl font-bold mb-4 text-primary">Prepojený talentový systém</h3>
-                    <p class="text-gray-700 mb-4">
+                    <p class="text-secondary mb-4">
                         Keď raz mladý človek vstúpi do rozvojového ekosystému, nenecháme ho spadnúť do prázdna. Mapujeme ďalšie príležitosti a
                         pomáhame mu v celkovom rozvojovom a kariérnom ekosystéme sa uplatniť.
                     </p>
 
                     <h3 class="text-2xl font-bold mb-4 text-primary">Hladký vstup na trh práce</h3>
-                    <p class="text-gray-700">
+                    <p class="text-secondary">
                         Nechceme stratiť čas a peniaze, ktoré už boli do talentu investované. Sme sprievodcami cez prechod, ktorý premieňa potenciál
                         na reálnu hodnotu.
                     </p>
 
                     <h3 class="text-2xl font-bold mb-4 text-primary">Aktívny matching (nie pasívne čakanie)</h3>
-                    <p class="text-gray-700 mb-4">
-                        Nevešieme pozície do vzduchu a nečakáme na zázrak. Poznáme ľudí. Poznáme firmy. Robíme many-to-many matching, nie one-to-many.
+                    <p class="text-secondary mb-4">
+                        Nevešiame pozície do vzduchu a nečakáme na zázrak. Poznáme ľudí. Poznáme firmy. Robíme many-to-many matching, nie one-to-many.
                     </p>
 
                     <h3 class="text-2xl font-bold mb-4 text-primary">Dáta a tracking</h3>
-                    <p class="text-gray-700 mb-4 font-medium">Po prvýkrát systematicky sledujeme:</p>
+                    <p class="text-secondary mb-4 font-medium">Po prvýkrát systematicky sledujeme:</p>
                     <ul class="space-y-2 ml-6">
-                        <li class="text-gray-700">• odkiaľ a kam mladý talent ide,</li>
-                        <li class="text-gray-700">• kde sa uplatní,</li>
-                        <li class="text-gray-700">• kde z procesu vypadáva,</li>
-                        <li class="text-gray-700">• prečo vo výbere (ne)uspieva,</li>
-                        <li class="text-gray-700">• čo funguje a čo nie.</li>
+                        <li class="text-secondary">• odkiaľ a kam mladý talent ide,</li>
+                        <li class="text-secondary">• kde sa uplatní,</li>
+                        <li class="text-secondary">• kde z procesu vypadáva,</li>
+                        <li class="text-secondary">• prečo vo výbere (ne)uspieva,</li>
+                        <li class="text-secondary">• čo funguje a čo nie.</li>
                     </ul>
-                    <p class="text-gray-700 mt-4">Bez dát nie je stratégia. Len dohady.</p>
+                    <p class="text-secondary mt-4">Bez dát nie je stratégia. Len dohady.</p>
 
                     <h3 class="text-2xl font-bold mb-4 text-secondary">Trojstranný feedback</h3>
-                    <p class="text-gray-700 mt-4">Feedback nie je bonus, ale základ funkčného systému.</p>
+                    <p class="text-secondary mt-4">Feedback nie je bonus, ale základ funkčného systému.</p>
 
-                    <div class="text-center p-4 bg-secondary/5 rounded-xl">
-                        <p class="text-gray-900 font-bold">firmy → mladí</p>
+                    <div class="text-center p-4 bg-secondary/5">
+                        <p class="text-primary font-bold">firmy → mladí</p>
                     </div>
-                    <div class="text-center p-4 bg-primary/5 rounded-xl">
-                        <p class="text-gray-900 font-bold">mladí → firmy</p>
+                    <div class="text-center p-4 bg-primary/5">
+                        <p class="text-primary font-bold">mladí → firmy</p>
                     </div>
-                    <div class="text-center p-4 bg-secondary/5 rounded-xl">
-                        <p class="text-gray-900 font-bold">trh → rozvojové organizácie</p>
+                    <div class="text-center p-4 bg-secondary/5">
+                        <p class="text-primary font-bold">trh → rozvojové organizácie</p>
                     </div>
                 </div>
             </section>
@@ -547,24 +448,24 @@
             <section class="mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Kde sme dnes</h2>
                 <div>
-                    <p class="text-gray-700 mb-6 leading-relaxed text-lg">
+                    <p class="text-secondary mb-6 leading-relaxed text-lg">
                         Sme na začiatku transformácie, ktorá nebude vždy pohodlná, no je potrebná.
                     </p>
-                    <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="bg-talbri-bg p-6">
                         <h3 class="text-xl font-bold mb-4 text-primary">Časový rámec (môže podliehať zmenám podľa potrieb nášho ekosystému)</h3>
 
                         <div class="space-y-6">
                             <div class="border-l-4 border-primary pl-4">
-                                <h4 class="font-bold text-gray-900">Február - Marec</h4>
-                                <ul class="ml-4 text-gray-700 space-y-2 mt-2">
+                                <h4 class="font-bold text-primary">Február - Marec</h4>
+                                <ul class="ml-4 text-secondary space-y-2 mt-2">
                                     <li>• Registrácie do pilotu</li>
                                     <li>• Prechádzanie si našim procesom</li>
                                 </ul>
                             </div>
 
                             <div class="border-l-4 border-secondary pl-4">
-                                <h4 class="font-bold text-gray-900">Apríl - Jún</h4>
-                                <ul class="ml-4 text-gray-700 space-y-2 mt-2">
+                                <h4 class="font-bold text-primary">Apríl - Jún</h4>
+                                <ul class="ml-4 text-secondary space-y-2 mt-2">
                                     <li>• Aktívny matching</li>
                                     <li>• Priame pohovory medzi mladým talentom a firmou</li>
                                     <li>• Ak bol výberový proces úspešný, nástup do práce už je predmetom dohody medzi mladým a firmou</li>
@@ -572,9 +473,9 @@
                             </div>
 
                             <div class="border-l-4 border-primary pl-4">
-                                <h4 class="font-bold text-gray-900">Od Júna ďalej</h4>
-                                <p class="text-gray-700 mt-2">Budeme pracovať na spracovaní výsledkov, aby sme poskytli:</p>
-                                <ul class="ml-4 text-gray-700 space-y-2 mt-2">
+                                <h4 class="font-bold text-primary">Od Júna ďalej</h4>
+                                <p class="text-secondary mt-2">Budeme pracovať na spracovaní výsledkov, aby sme poskytli:</p>
+                                <ul class="ml-4 text-secondary space-y-2 mt-2">
                                     <li>• reálne čísla,</li>
                                     <li>• reálne dopady,</li>
                                     <li>• jasné závery</li>
@@ -584,8 +485,8 @@
                         </div>
                     </div>
 
-                    <div class="bg-primary/5 p-6 rounded-xl mt-8">
-                        <p class="text-gray-700 italic">
+                    <div class="bg-primary/5 p-6 mt-8">
+                        <p class="text-secondary italic">
                             Budujeme to transparentne a otvorene, preto počas celého procesu budeme zdieľať náš progres a priebežne informovať o
                             číslach a zisteniach. Sledujte nás na našej LinkedIn stránke pre pravidelné updaty.
                         </p>
@@ -597,21 +498,21 @@
             <section class="mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Prečo sa oplatí byť pri tom</h2>
                 <div class="grid md:grid-cols-3 gap-6">
-                    <div class="bg-white p-6 rounded-xl border-2 border-gray-100">
+                    <div class="bg-white p-6 border-2 border-talbri-peach/30">
                         <h3 class="text-xl font-bold mb-4 text-primary">Pre mladý talent</h3>
-                        <p class="text-gray-700">hladší a hlavne férový vstup na trh</p>
+                        <p class="text-secondary">hladší a hlavne férový vstup na trh</p>
                     </div>
-                    <div class="bg-white p-6 rounded-xl border-2 border-gray-100">
+                    <div class="bg-white p-6 border-2 border-talbri-peach/30">
                         <h3 class="text-xl font-bold mb-4 text-secondary">Pre firmy</h3>
-                        <p class="text-gray-700">efektívnejší hiring a prístup k mladému talentu z celého Slovenska</p>
+                        <p class="text-secondary">efektívnejší hiring a prístup k mladému talentu z celého Slovenska</p>
                     </div>
-                    <div class="bg-white p-6 rounded-xl border-2 border-gray-100">
+                    <div class="bg-white p-6 border-2 border-talbri-peach/30">
                         <h3 class="text-xl font-bold mb-4 text-primary">Pre ekosystém</h3>
-                        <p class="text-gray-700">silnejšie postavenie v talentovom ekosystéme a jasné dáta o dopade</p>
+                        <p class="text-secondary">silnejšie postavenie v talentovom ekosystéme a jasné dáta o dopade</p>
                     </div>
                 </div>
                 <div class="mt-8 text-center">
-                    <p class="text-lg text-gray-700 italic">
+                    <p class="text-lg text-secondary italic">
                         Toto nie je hotový produkt.<br />
                         Toto je vedomý experiment.
                     </p>
@@ -621,27 +522,34 @@
             <!-- Call to Action -->
             <section class="mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Pridaj sa, ak si:</h2>
-                <div class="bg-gradient-to-r from-primary to-secondary p-8 md:p-12 rounded-2xl text-center text-white">
+                <div class="bg-primary p-8 md:p-12 text-center text-white relative overflow-hidden">
+                    <!-- Decorative Postava SVGs -->
+                    <div class="absolute top-5 left-5 opacity-10 pointer-events-none hidden lg:block">
+                        <img src="../photos/Postava_7.svg" alt="" class="w-28 h-auto" />
+                    </div>
+                    <div class="absolute bottom-5 right-5 opacity-10 pointer-events-none hidden lg:block">
+                        <img src="../photos/Postava_8.svg" alt="" class="w-36 h-auto" />
+                    </div>
                     <div class="grid md:grid-cols-4 gap-4 mb-8">
-                        <div class="bg-white/20 p-6 rounded-xl">
+                        <div class="bg-white/20 p-6">
                             <i
                                 data-feather="user"
                                 class="w-8 h-8 mx-auto mb-2"></i>
                             <p class="font-bold">Mladý talent</p>
                         </div>
-                        <div class="bg-white/20 p-6 rounded-xl">
+                        <div class="bg-white/20 p-6">
                             <i
                                 data-feather="briefcase"
                                 class="w-8 h-8 mx-auto mb-2"></i>
                             <p class="font-bold">Firma</p>
                         </div>
-                        <div class="bg-white/20 p-6 rounded-xl">
+                        <div class="bg-white/20 p-6">
                             <i
                                 data-feather="heart"
                                 class="w-8 h-8 mx-auto mb-2"></i>
                             <p class="font-bold">Rozvojová organizácia alebo akadémia</p>
                         </div>
-                        <div class="bg-white/20 p-6 rounded-xl">
+                        <div class="bg-white/20 p-6">
                             <i
                                 data-feather="globe"
                                 class="w-8 h-8 mx-auto mb-2"></i>
@@ -649,7 +557,7 @@
                         </div>
                     </div>
                     <p class="text-xl font-medium mb-6">Pozvanie má každý, no zodpovednosť tiež.</p>
-                    <div class="bg-white/20 p-6 rounded-xl">
+                    <div class="bg-white/20 p-6">
                         <p class="text-lg">
                             Budúcnosť sa nezmení zajtra.<br />
                             Zmení sa vtedy, keď o nej prestaneme hovoriť a začneme ju aktívne budovať.<br />
@@ -658,246 +566,12 @@
                     </div>
                 </div>
             </section>
-
-            <!-- Team Section -->
-            <section
-                id="team"
-                class="py-16 bg-white">
-                <div class="container mx-auto px-4">
-                    <div class="text-center mb-12">
-                        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Náš tím</h2>
-                        <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
-                        <p class="text-xl text-gray-700 max-w-3xl mx-auto">Ľudia, ktorí stoja za TalBri.</p>
-                    </div>
-
-                    <div class="max-w-6xl mx-auto flex flex-wrap justify-center gap-8">
-                        <!-- Team Member 1 -->
-                        <div
-                            class="group bg-gray-50 p-6 rounded-xl border-2 border-gray-100 hover:shadow-xl hover:border-primary/30 transition-all duration-300 text-center w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)]">
-                            <div class="mb-4 relative inline-block">
-                                <img
-                                    src="../photos/karin_popovicova.jpeg"
-                                    alt="Karin Popovičová"
-                                    class="w-32 h-32 mx-auto rounded-full object-cover group-hover:scale-105 transition-transform duration-300" />
-                            </div>
-                            <h3 class="text-xl font-bold mb-2 text-gray-900">Karin Popovičová</h3>
-                            <a
-                                href="https://www.linkedin.com/in/karin-popovicova/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="inline-flex items-center gap-2 text-secondary hover:text-primary transition">
-                                <i
-                                    data-feather="linkedin"
-                                    class="w-5 h-5"></i>
-                                <span class="text-sm">LinkedIn</span>
-                            </a>
-                        </div>
-
-                        <!-- Team Member 2 -->
-                        <div
-                            class="group bg-gray-50 p-6 rounded-xl border-2 border-gray-100 hover:shadow-xl hover:border-primary/30 transition-all duration-300 text-center w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)]">
-                            <div class="mb-4 relative inline-block">
-                                <img
-                                    src="../photos/alexandra_behranova.jpeg"
-                                    alt="Alexandra Behranová"
-                                    class="w-32 h-32 mx-auto rounded-full object-cover group-hover:scale-105 transition-transform duration-300" />
-                            </div>
-                            <h3 class="text-xl font-bold mb-2 text-gray-900">Alexandra Behranová</h3>
-                            <a
-                                href="https://www.linkedin.com/in/sasa-behranova/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="inline-flex items-center gap-2 text-secondary hover:text-primary transition">
-                                <i
-                                    data-feather="linkedin"
-                                    class="w-5 h-5"></i>
-                                <span class="text-sm">LinkedIn</span>
-                            </a>
-                        </div>
-
-                        <!-- Team Member 3 -->
-                        <div
-                            class="group bg-gray-50 p-6 rounded-xl border-2 border-gray-100 hover:shadow-xl hover:border-primary/30 transition-all duration-300 text-center w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)]">
-                            <div class="mb-4 relative inline-block">
-                                <img
-                                    src="../photos/tomas_krebs.jpeg"
-                                    alt="Tomáš Krebs"
-                                    class="w-32 h-32 mx-auto rounded-full object-cover group-hover:scale-105 transition-transform duration-300" />
-                            </div>
-                            <h3 class="text-xl font-bold mb-2 text-gray-900">Tomáš Krebs</h3>
-                            <a
-                                href="https://www.linkedin.com/in/tomikrebs/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="inline-flex items-center gap-2 text-secondary hover:text-primary transition">
-                                <i
-                                    data-feather="linkedin"
-                                    class="w-5 h-5"></i>
-                                <span class="text-sm">LinkedIn</span>
-                            </a>
-                        </div>
-
-                        <!-- Team Member 4 -->
-                        <div
-                            class="group bg-gray-50 p-6 rounded-xl border-2 border-gray-100 hover:shadow-xl hover:border-primary/30 transition-all duration-300 text-center w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)]">
-                            <div class="mb-4 relative inline-block">
-                                <img
-                                    src="../photos/barbora_polovka.png"
-                                    alt="Barbora Polovka Szepeová"
-                                    class="w-32 h-32 mx-auto rounded-full object-cover group-hover:scale-105 transition-transform duration-300" />
-                            </div>
-                            <h3 class="text-xl font-bold mb-2 text-gray-900">Barbora Polovka Szepeová</h3>
-                            <a
-                                href="https://www.linkedin.com/in/barbora-polovka-47b04ab3/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="inline-flex items-center gap-2 text-secondary hover:text-primary transition">
-                                <i
-                                    data-feather="linkedin"
-                                    class="w-5 h-5"></i>
-                                <span class="text-sm">LinkedIn</span>
-                            </a>
-                        </div>
-
-                        <!-- Team Member 5 -->
-                        <div
-                            class="group bg-gray-50 p-6 rounded-xl border-2 border-gray-100 hover:shadow-xl hover:border-primary/30 transition-all duration-300 text-center w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)]">
-                            <div class="mb-4 relative inline-block">
-                                <img
-                                    src="../photos/sona_sochova.jpeg"
-                                    alt="Soňa Sochová"
-                                    class="w-32 h-32 mx-auto rounded-full object-cover group-hover:scale-105 transition-transform duration-300" />
-                            </div>
-                            <h3 class="text-xl font-bold mb-2 text-gray-900">Soňa Sochová</h3>
-                            <a
-                                href="https://www.linkedin.com/in/soniasochova/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="inline-flex items-center gap-2 text-secondary hover:text-primary transition">
-                                <i
-                                    data-feather="linkedin"
-                                    class="w-5 h-5"></i>
-                                <span class="text-sm">LinkedIn</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Contact Section -->
-            <section
-                id="contact"
-                class="py-16 bg-gray-50">
-                <div class="container mx-auto px-4">
-                    <div class="text-center mb-8">
-                        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Kontakt</h2>
-                        <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
-                    </div>
-
-                    <div class="max-w-2xl mx-auto text-center">
-                        <div
-                            class="bg-white p-8 rounded-xl border-2 border-gray-100 hover:shadow-xl hover:border-primary/30 transition-all duration-300">
-                            <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-6">
-                                <i
-                                    data-feather="mail"
-                                    class="w-8 h-8 text-primary"></i>
-                            </div>
-                            <h3 class="text-xl font-bold mb-4 text-gray-900">Kontaktujte nás</h3>
-                            <p class="text-gray-700 mb-6">Máte otázky alebo chcete s nami spolupracovať? Radi sa s vami spojíme.</p>
-                            <a
-                                href="mailto:info@talbri.eu"
-                                class="inline-flex items-center gap-2 text-lg font-semibold text-primary hover:text-primary/80 transition">
-                                info@talbri.eu
-                                <i
-                                    data-feather="arrow-right"
-                                    class="w-5 h-5"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </main>
 
-        <!-- Footer -->
-        <footer class="bg-gray-900 text-white py-12">
-            <div class="w-full px-4 sm:px-6 lg:px-10">
-                <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between md:gap-10">
-                    <div class="text-center md:text-left">
-                        <h3 class="text-2xl font-bold">
-                            <span class="text-primary">TalBri</span>
-                        </h3>
-                        <p class="mt-2 text-gray-400">Spájame slovenský talent s príležitosťami.</p>
-                    </div>
-                    <div class="text-center md:text-left">
-                        <h4 class="text-lg font-semibold text-white">Kontakt</h4>
-                        <div class="mt-3 flex flex-col items-center gap-3 md:items-start">
-                            <a
-                                href="mailto:info@talbri.eu"
-                                class="inline-flex items-center gap-2 text-gray-400 hover:text-white transition break-all"
-                                aria-label="Napíšte nám email">
-                                <i
-                                    data-feather="mail"
-                                    class="w-5 h-5"></i>
-                                <span>info@talbri.eu</span>
-                            </a>
-                            <a
-                                href="https://www.linkedin.com/company/talbri/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="inline-flex items-center gap-2 text-gray-400 hover:text-white transition"
-                                aria-label="TalBri na LinkedIn">
-                                <i
-                                    data-feather="linkedin"
-                                    class="w-5 h-5"></i>
-                                <span>LinkedIn</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
-                    <p>
-                        ©
-                        <script>
-                            document.write(new Date().getFullYear());
-                        </script>
-                        TalBri. Všetky práva vyhradené.
-                    </p>
-                </div>
-            </div>
-        </footer>
+        <div id="team-root"></div>
+        <div id="contact-root"></div>
+        <div id="footer-root"></div>
 
-        <script>
-            feather.replace();
-
-            // Mobile menu toggle
-            const mobileMenuButton = document.getElementById("mobile-menu-button");
-            const mobileMenu = document.getElementById("mobile-menu");
-
-            if (mobileMenuButton && mobileMenu) {
-                const setMobileMenuIcon = (iconName) => {
-                    mobileMenuButton.innerHTML = `<i data-feather="${iconName}" class="w-6 h-6"></i>`;
-                    feather.replace();
-                };
-
-                setMobileMenuIcon("menu");
-                mobileMenuButton.setAttribute("aria-expanded", "false");
-
-                mobileMenuButton.addEventListener("click", function () {
-                    mobileMenu.classList.toggle("hidden");
-                    const isHidden = mobileMenu.classList.contains("hidden");
-                    setMobileMenuIcon(isHidden ? "menu" : "x");
-                    this.setAttribute("aria-expanded", String(!isHidden));
-                });
-
-                // Close mobile menu when clicking on a link
-                mobileMenu.querySelectorAll("a").forEach((link) => {
-                    link.addEventListener("click", function () {
-                        mobileMenu.classList.add("hidden");
-                        setMobileMenuIcon("menu");
-                        mobileMenuButton.setAttribute("aria-expanded", "false");
-                    });
-                });
-            }
-        </script>
+        <script src="../scripts/shared.js"></script>
     </body>
 </html>
