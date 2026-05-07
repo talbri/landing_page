@@ -11,23 +11,27 @@
             type="image/x-icon"
             href="/static/favicon.ico" />
         <script src="https://cdn.tailwindcss.com"></script>
-        <script src="https://unpkg.com/feather-icons"></script>
-        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
         <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+            rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
             rel="stylesheet" />
         <script>
             tailwind.config = {
                 theme: {
                     extend: {
                         colors: {
-                            primary: "#0C0E1B",
-                            secondary: "#1F212D",
-                            "talbri-cyan": "#ACDEEA",
-                            "talbri-peach": "#FBE8E1",
-                            "talbri-orange": "#CE4614",
-                            "talbri-purple": "#522DCB",
-                            "talbri-bg": "#FDF1ED",
+                            "tb-dark": "#0C0E1B",
+                            "tb-dark-alt": "#1F212D",
+                            "tb-light-blue": "#ACDEEA",
+                            "tb-sky": "#C0E6EF",
+                            "tb-light-pink": "#FBE8E1",
+                            "tb-cream": "#FDF1ED",
+                            "tb-orange": "#CE4614",
+                            "tb-purple-dark": "#522DCB",
+                            "tb-purple-mid": "#872DCB",
+                            "tb-cyan": "#268EC1",
                         },
                     },
                 },
@@ -38,29 +42,52 @@
             rel="stylesheet" />
     </head>
     <body
-        class="bg-white text-secondary"
+        class="bg-white text-tb-dark font-['Outfit'] tracking-[-0.02em]"
         data-base-path="./"
         data-page="index">
         <div id="header-root"></div>
 
         <!-- Hero Section -->
-        <section class="relative py-20 md:py-32 bg-talbri-peach overflow-hidden">
-            <div class="container mx-auto px-4 text-center relative z-10">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6 text-primary">
-                    <span>TalBri</span>
-                </h1>
-                <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-10 text-secondary">
-                    Aby mladý talent nemusel odchádzať len preto, že sa nevie stretnúť s príležitosťou.
+        <section class="relative py-[120px] bg-tb-light-pink overflow-hidden">
+            <!-- Decorative figures -->
+            <div
+                class="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none hidden lg:block"
+                style="filter: brightness(0) saturate(100%) invert(93%) sepia(12%) saturate(367%) hue-rotate(310deg) brightness(103%) contrast(97%)">
+                <img
+                    src="photos/Postava_4.svg"
+                    alt=""
+                    class="w-80 h-auto" />
+            </div>
+            <div
+                class="absolute left-0 bottom-0 pointer-events-none hidden lg:block"
+                style="filter: brightness(0) saturate(100%) invert(93%) sepia(12%) saturate(367%) hue-rotate(310deg) brightness(103%) contrast(97%)">
+                <img
+                    src="photos/Postava_1.svg"
+                    alt=""
+                    class="w-64 h-auto" />
+            </div>
+            <div
+                class="absolute left-1/4 top-0 pointer-events-none hidden lg:block opacity-60"
+                style="filter: brightness(0) saturate(100%) invert(93%) sepia(12%) saturate(367%) hue-rotate(310deg) brightness(103%) contrast(97%)">
+                <img
+                    src="photos/Postava_7.svg"
+                    alt=""
+                    class="w-48 h-auto" />
+            </div>
+            <div class="max-w-[1440px] mx-auto px-20 text-center relative z-10">
+                <h1 class="text-[56px] leading-[64px] font-bold tracking-[-0.02em] mb-4 text-tb-dark">TalBri</h1>
+                <p class="text-2xl leading-7 font-normal tracking-[-0.02em] max-w-3xl mx-auto mb-16 text-tb-dark">
+                    Spájame mladý slovenský talent s príležitosťami na pracovnom trhu.
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center gap-4">
                     <a
                         href="#process"
-                        class="bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-8 transition duration-300 transform hover:scale-105">
+                        class="bg-tb-orange hover:bg-[#b33d11] text-white font-semibold text-base tracking-[-0.02em] px-6 py-3 rounded transition-colors">
                         Ako to funguje
                     </a>
                     <a
                         href="#register"
-                        class="bg-talbri-orange hover:bg-talbri-orange/90 text-white font-semibold py-3 px-8 transition duration-300 transform hover:scale-105">
+                        class="bg-tb-orange hover:bg-[#b33d11] text-white font-semibold text-base tracking-[-0.02em] px-6 py-3 rounded transition-colors">
                         Zaregistrovať sa
                     </a>
                 </div>
@@ -68,37 +95,36 @@
         </section>
 
         <!-- Problem Statement -->
-        <section class="py-16 bg-talbri-bg">
-            <div class="container mx-auto px-4 max-w-4xl">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Slovenská talentová medzera</h2>
-                    <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+        <section class="py-[120px] bg-tb-light-blue">
+            <div class="max-w-[1440px] mx-auto px-20">
+                <div class="text-center mb-16">
+                    <h2 class="text-[40px] leading-[48px] font-semibold tracking-[-0.02em] mb-4 text-tb-dark">Slovenská talentová medzera</h2>
+                    <p class="text-2xl leading-7 font-normal tracking-[-0.02em] text-tb-dark max-w-3xl mx-auto">
+                        Mladí Slováci odchádzajú, pretože nevidia víziu pre život doma. Je to však skutočne nedostatok príležitostí alebo zlyhanie
+                        spojiť potenciál s možnosťami?
+                    </p>
                 </div>
 
-                <div class="grid md:grid-cols-2 gap-10">
+                <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
                     <div
-                        class="group bg-white p-8 border-2 border-talbri-peach/30 hover:shadow-xl hover:border-primary/30 transition-all duration-300 cursor-pointer">
-                        <div class="text-primary mb-4">
-                            <i
-                                data-feather="alert-triangle"
-                                class="w-12 h-12"></i>
+                        class="group bg-white p-8 border-2 border-tb-light-pink/30 hover:shadow-xl hover:border-tb-dark/30 transition-all duration-300 cursor-pointer">
+                        <div class="text-tb-dark mb-4">
+                            <i class="ri-alert-line text-5xl"></i>
                         </div>
-                        <h3 class="text-2xl font-bold mb-4 text-primary">Odliv talentov</h3>
-                        <p class="text-secondary mb-4">
+                        <h3 class="text-[32px] leading-10 font-medium tracking-[-0.02em] mb-4 text-tb-dark">Odliv talentov</h3>
+                        <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
                             Mladí Slováci odchádzajú, pretože nevidia víziu pre život doma a príležitosti na rast. Ale je to skutočne nedostatok
                             príležitostí alebo zlyhanie spojiť potenciál s možnosťami?
                         </p>
                     </div>
 
                     <div
-                        class="group bg-white p-8 border-2 border-talbri-peach/30 hover:shadow-xl hover:border-secondary/30 transition-all duration-300 cursor-pointer">
-                        <div class="text-secondary mb-4">
-                            <i
-                                data-feather="layers"
-                                class="w-12 h-12"></i>
+                        class="group bg-white p-8 border-2 border-tb-light-pink/30 hover:shadow-xl hover:border-tb-dark-alt/30 transition-all duration-300 cursor-pointer">
+                        <div class="text-tb-dark-alt mb-4">
+                            <i class="ri-stack-line text-5xl"></i>
                         </div>
-                        <h3 class="text-2xl font-bold mb-4 text-primary">Roztrieštený systém</h3>
-                        <p class="text-secondary mb-4">
+                        <h3 class="text-[32px] leading-10 font-medium tracking-[-0.02em] mb-4 text-tb-dark">Roztrieštený systém</h3>
+                        <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
                             Slovensko má prosperujúci rozvojový ekosystém, ktorý robí skvelú prácu s miestnym talentom. Je však fragmentovaný. Veci sa
                             dejú v izolácii a bez spolupráce.
                         </p>
@@ -108,55 +134,53 @@
         </section>
 
         <!-- Our Solution -->
-        <section class="py-16 bg-white">
-            <div class="container mx-auto px-4 max-w-4xl">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Naše riešenie</h2>
-                    <div class="w-20 h-1 bg-secondary mx-auto mb-8"></div>
-                    <p class="text-xl text-secondary max-w-3xl mx-auto">
+        <section class="py-[120px] bg-white">
+            <div class="max-w-[1440px] mx-auto px-20">
+                <div class="text-center mb-16">
+                    <h2 class="text-[40px] leading-[48px] font-semibold tracking-[-0.02em] mb-4 text-tb-dark">Naše riešenie</h2>
+                    <p class="text-2xl leading-7 font-normal tracking-[-0.02em] text-tb-dark max-w-3xl mx-auto">
                         Mladé talenty spájame s príležitosťami cez štruktúrovaný proces, ktorý funguje pre všetkých.
                     </p>
                 </div>
 
-                <div class="bg-white p-8 shadow-sm border-2 border-talbri-peach/30 hover:shadow-xl transition-all duration-300">
+                <div class="max-w-4xl mx-auto bg-white p-8 shadow-sm border-2 border-tb-light-pink/30 hover:shadow-xl transition-all duration-300">
+                    <!-- Talent -->
                     <div class="group flex items-start mb-6 cursor-pointer">
-                        <div class="bg-primary text-white p-3 mr-4 group-hover:scale-110 transition-transform duration-300">
-                            <i
-                                data-feather="users"
-                                class="w-6 h-6"></i>
+                        <div class="bg-tb-cyan text-white p-3 mr-4 group-hover:scale-110 transition-transform duration-300">
+                            <i class="ri-team-line text-2xl"></i>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold mb-2 text-primary">Pre talenty</h3>
-                            <p class="text-secondary">
+                            <h3 class="text-[32px] leading-10 font-medium tracking-[-0.02em] mb-2 text-tb-dark">Pre talenty</h3>
+                            <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
                                 Pomáhame mladým ľuďom na Slovensku lepšie vstúpiť na pracovný trh — so spätnou väzbou, podporou a prístupom k
                                 zmysluplným príležitostiam.
                             </p>
                         </div>
                     </div>
 
+                    <!-- Company -->
                     <div class="group flex items-start mb-6 cursor-pointer">
-                        <div class="bg-secondary text-white p-3 mr-4 group-hover:scale-110 transition-transform duration-300">
-                            <i
-                                data-feather="briefcase"
-                                class="w-6 h-6"></i>
+                        <div class="bg-tb-purple-mid text-white p-3 mr-4 group-hover:scale-110 transition-transform duration-300">
+                            <i class="ri-briefcase-line text-2xl"></i>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold mb-2 text-primary">Pre firmy</h3>
-                            <p class="text-secondary">
+                            <h3 class="text-[32px] leading-10 font-medium tracking-[-0.02em] mb-2 text-tb-dark">Pre firmy</h3>
+                            <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
                                 Prinášame vám overených mladých ľudí s potenciálom, pripravených na vstup do pracovného života.
                             </p>
                         </div>
                     </div>
 
+                    <!-- Organisation -->
                     <div class="group flex items-start cursor-pointer">
-                        <div class="bg-talbri-cyan/30 text-primary p-3 mr-4 group-hover:scale-110 transition-transform duration-300">
-                            <i
-                                data-feather="heart"
-                                class="w-6 h-6"></i>
+                        <div class="bg-tb-purple-dark text-white p-3 mr-4 group-hover:scale-110 transition-transform duration-300">
+                            <i class="ri-heart-line text-2xl"></i>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold mb-2 text-primary">Pre rozvojové organizácie</h3>
-                            <p class="text-secondary">Budujeme s vami ekosystém s merateľným dopadom, ktorý pomáha rozvíjať talent na Slovensku.</p>
+                            <h3 class="text-[32px] leading-10 font-medium tracking-[-0.02em] mb-2 text-tb-dark">Pre rozvojové organizácie</h3>
+                            <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
+                                Budujeme s vami ekosystém s merateľným dopadom, ktorý pomáha rozvíjať talent na Slovensku.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -166,21 +190,20 @@
         <!-- Registration Form -->
         <section
             id="register"
-            class="py-16 bg-talbri-bg">
-            <div class="container mx-auto px-4 max-w-4xl">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Zaregistruj sa do TalBri</h2>
-                    <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
-                    <p class="text-xl text-secondary max-w-3xl mx-auto">
-                        Príležitosti, ktoré zodpovedajú tvojmu potenciálu. Registruj sa do <b>30. apríla 2026</b>.
+            class="py-[120px] bg-tb-cream">
+            <div class="max-w-[1440px] mx-auto px-20">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-[40px] leading-[48px] font-semibold tracking-[-0.02em] mb-4 text-tb-dark">Zaregistruj sa do TalBri</h2>
+                    <p class="text-2xl leading-7 font-normal tracking-[-0.02em] text-tb-dark mb-16">
+                        <!-- Príležitosti, ktoré zodpovedajú tvojmu potenciálu. Registruj sa do <b>30. apríla 2026</b>. -->
+                        Registrácia pre rok 2026 je <b>ukončená</b>. Nechaj nám nižšie svoj e-mail a my ťa kontaktujeme, keď spustíme registráciu pre
+                        <b>rok 2027</b>.
                     </p>
-                    <p class="mt-10">
-                        <a
-                            href="https://forms.gle/VTuZQNBtCiM8iBEg6"
-                            class="bg-talbri-orange hover:bg-talbri-orange/90 text-white font-semibold py-3 px-8 transition duration-300 transform hover:scale-105">
-                            Zaregistrovať sa pomocou Google Forms
-                        </a>
-                    </p>
+                    <a
+                        href="https://forms.gle/mrk4GwWb4vM64meC6"
+                        class="inline-block bg-tb-orange hover:bg-[#b33d11] text-white font-semibold text-base tracking-[-0.02em] px-6 py-3 rounded transition-colors">
+                        Chcem sa zapojiť do TalBri v roku 2027
+                    </a>
                 </div>
             </div>
         </section>
@@ -188,59 +211,51 @@
         <!-- Process Section -->
         <section
             id="process"
-            class="py-16 bg-white">
-            <div class="container mx-auto px-4">
+            class="py-[120px] bg-white">
+            <div class="max-w-[1440px] mx-auto px-20">
                 <div class="text-center mb-16">
-                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-primary">Ako to funguje</h2>
-                    <div class="w-20 h-1 bg-secondary mx-auto mb-6 md:mb-8"></div>
-                    <p class="text-base md:text-xl text-secondary max-w-3xl mx-auto px-4">
+                    <h2 class="text-[40px] leading-[48px] font-semibold tracking-[-0.02em] mb-4 text-tb-dark">Ako to funguje</h2>
+                    <p class="text-2xl leading-7 font-normal tracking-[-0.02em] text-tb-dark max-w-3xl mx-auto">
                         Jasný proces, ktorý funguje pre kandidátov, firmy aj organizácie.
                     </p>
                 </div>
 
-                <div class="max-w-6xl mx-auto">
+                <div class="max-w-5xl mx-auto">
                     <!-- Candidate Process -->
-                    <div class="mb-12 md:mb-20">
-                        <h3 class="text-xl md:text-2xl font-bold mb-8 md:mb-12 text-center text-primary">Pre kandidátov</h3>
+                    <div class="mb-20">
+                        <h3 class="text-[32px] leading-10 font-medium tracking-[-0.02em] mb-12 text-center text-tb-dark">Pre kandidátov</h3>
 
                         <!-- Timeline Container -->
                         <div class="relative">
-                            <!-- Vertical Timeline Line - Hidden on mobile, visible on md+ -->
-                            <div class="hidden md:block absolute left-8 lg:left-12 top-0 bottom-0 w-1 bg-primary"></div>
+                            <!-- Vertical Timeline Line -->
+                            <div class="hidden md:block absolute left-12 top-0 bottom-0 w-1 bg-tb-dark"></div>
 
-                            <div class="space-y-6 md:space-y-8">
+                            <div class="space-y-8">
                                 <!-- Step 1 -->
                                 <div class="group relative">
-                                    <div class="flex items-start gap-3 md:gap-6">
-                                        <!-- Timeline Badge -->
+                                    <div class="flex items-start gap-6">
                                         <div class="relative flex-shrink-0">
                                             <div
-                                                class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-primary flex flex-col items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                                <i
-                                                    data-feather="edit-3"
-                                                    class="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 mb-0.5 md:mb-1"></i>
-                                                <span class="text-xs md:text-sm font-bold">KROK 1</span>
+                                                class="w-24 h-24 bg-tb-dark flex flex-col items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                                <i class="ri-edit-line text-3xl mb-1"></i>
+                                                <span class="text-sm font-bold">KROK 1</span>
                                             </div>
                                         </div>
-
-                                        <!-- Content Card -->
                                         <div
-                                            class="flex-1 bg-white p-4 md:p-6 lg:p-8 border-2 border-talbri-peach/30 shadow-sm group-hover:shadow-xl group-hover:border-primary/30 transition-all duration-300">
-                                            <div class="flex items-start justify-between mb-3 md:mb-4 gap-2">
-                                                <h4 class="text-lg md:text-xl lg:text-2xl font-bold text-primary">Registrácia</h4>
-                                                <span class="bg-primary/10 text-primary text-xs font-semibold px-2 md:px-3 py-1 whitespace-nowrap"
+                                            class="flex-1 bg-white p-8 border-2 border-tb-light-pink/30 shadow-sm group-hover:shadow-xl group-hover:border-tb-dark/30 transition-all duration-300">
+                                            <div class="flex items-start justify-between mb-4 gap-2">
+                                                <h4 class="text-[32px] leading-10 font-medium tracking-[-0.02em] text-tb-dark">Registrácia</h4>
+                                                <span class="bg-tb-dark/10 text-tb-dark text-xs font-semibold px-3 py-1 whitespace-nowrap"
                                                     >~30 min</span
                                                 >
                                             </div>
-                                            <p class="text-sm md:text-base text-secondary leading-relaxed mb-3 md:mb-4">
+                                            <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark mb-4">
                                                 Si mladý človek vo veku 18-30, ktorý má záujem nájsť tú správnu pracovnú príležitosť pre svoj
                                                 potenciál? Registruj sa do <b>30. apríla 2026</b> a začni svoju cestu s TalBri!
                                             </p>
-                                            <div class="flex items-center gap-2 text-xs md:text-sm text-primary font-medium">
-                                                <i
-                                                    data-feather="arrow-right"
-                                                    class="w-3 h-3 md:w-4 md:h-4"></i>
-                                                <span>Vyplň registračný Google formulár </span>
+                                            <div class="flex items-center gap-2 text-sm text-tb-dark font-medium">
+                                                <i class="ri-arrow-right-line"></i>
+                                                <span>Vyplň registračný Google formulár</span>
                                             </div>
                                         </div>
                                     </div>
@@ -248,35 +263,30 @@
 
                                 <!-- Step 2 -->
                                 <div class="group relative">
-                                    <div class="flex items-start gap-3 md:gap-6">
-                                        <!-- Timeline Badge -->
+                                    <div class="flex items-start gap-6">
                                         <div class="relative flex-shrink-0">
                                             <div
-                                                class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-primary flex flex-col items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                                <i
-                                                    data-feather="check-circle"
-                                                    class="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 mb-0.5 md:mb-1"></i>
-                                                <span class="text-xs md:text-sm font-bold">KROK 2</span>
+                                                class="w-24 h-24 bg-tb-dark flex flex-col items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                                <i class="ri-checkbox-circle-line text-3xl mb-1"></i>
+                                                <span class="text-sm font-bold">KROK 2</span>
                                             </div>
                                         </div>
-
-                                        <!-- Content Card -->
                                         <div
-                                            class="flex-1 bg-white p-4 md:p-6 lg:p-8 border-2 border-talbri-peach/30 shadow-sm group-hover:shadow-xl group-hover:border-primary/30 transition-all duration-300">
-                                            <div class="flex items-start justify-between mb-3 md:mb-4 gap-2">
-                                                <h4 class="text-lg md:text-xl lg:text-2xl font-bold text-primary">Talent na prvom mieste</h4>
-                                                <span class="bg-secondary/10 text-secondary text-xs font-semibold px-2 md:px-3 py-1 whitespace-nowrap"
+                                            class="flex-1 bg-white p-8 border-2 border-tb-light-pink/30 shadow-sm group-hover:shadow-xl group-hover:border-tb-dark/30 transition-all duration-300">
+                                            <div class="flex items-start justify-between mb-4 gap-2">
+                                                <h4 class="text-[32px] leading-10 font-medium tracking-[-0.02em] text-tb-dark">
+                                                    Talent na prvom mieste
+                                                </h4>
+                                                <span class="bg-tb-dark-alt/10 text-tb-dark-alt text-xs font-semibold px-3 py-1 whitespace-nowrap"
                                                     >~30-45 min</span
                                                 >
                                             </div>
-                                            <p class="text-sm md:text-base text-secondary leading-relaxed mb-3 md:mb-4">
+                                            <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark mb-4">
                                                 Pripravili sme pre Teba sadu otázok, ktoré nám pomôžu lepšie pochopiť tvoje silné stránky, motiváciu a
                                                 prirodzený štýl fungovania. Link ti bude zaslaný priamo na mail po registrácii.
                                             </p>
-                                            <div class="flex items-center gap-2 text-xs md:text-sm text-secondary font-medium">
-                                                <i
-                                                    data-feather="clock"
-                                                    class="w-3 h-3 md:w-4 md:h-4"></i>
+                                            <div class="flex items-center gap-2 text-sm text-tb-dark-alt font-medium">
+                                                <i class="ri-time-line"></i>
                                                 <span>Na vyplnenie budeš mať 2 týždne</span>
                                             </div>
                                         </div>
@@ -285,35 +295,28 @@
 
                                 <!-- Step 3 -->
                                 <div class="group relative">
-                                    <div class="flex items-start gap-3 md:gap-6">
-                                        <!-- Timeline Badge -->
+                                    <div class="flex items-start gap-6">
                                         <div class="relative flex-shrink-0">
                                             <div
-                                                class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-primary flex flex-col items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                                <i
-                                                    data-feather="activity"
-                                                    class="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 mb-0.5 md:mb-1"></i>
-                                                <span class="text-xs md:text-sm font-bold">KROK 3</span>
+                                                class="w-24 h-24 bg-tb-dark flex flex-col items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                                <i class="ri-pulse-line text-3xl mb-1"></i>
+                                                <span class="text-sm font-bold">KROK 3</span>
                                             </div>
                                         </div>
-
-                                        <!-- Content Card -->
                                         <div
-                                            class="flex-1 bg-white p-4 md:p-6 lg:p-8 border-2 border-talbri-peach/30 shadow-sm group-hover:shadow-xl group-hover:border-primary/30 transition-all duration-300">
-                                            <div class="flex items-start justify-between mb-3 md:mb-4 gap-2">
-                                                <h4 class="text-lg md:text-xl lg:text-2xl font-bold text-primary">Poďme sa spoznať</h4>
-                                                <span class="bg-primary/10 text-primary text-xs font-semibold px-2 md:px-3 py-1 whitespace-nowrap"
+                                            class="flex-1 bg-white p-8 border-2 border-tb-light-pink/30 shadow-sm group-hover:shadow-xl group-hover:border-tb-dark/30 transition-all duration-300">
+                                            <div class="flex items-start justify-between mb-4 gap-2">
+                                                <h4 class="text-[32px] leading-10 font-medium tracking-[-0.02em] text-tb-dark">Poďme sa spoznať</h4>
+                                                <span class="bg-tb-dark/10 text-tb-dark text-xs font-semibold px-3 py-1 whitespace-nowrap"
                                                     >30 min</span
                                                 >
                                             </div>
-                                            <p class="text-sm md:text-base text-secondary leading-relaxed mb-3 md:mb-4">
+                                            <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark mb-4">
                                                 Tešíme sa na online rozhovor, kde budeš môcť spoznať aj ty nás! Dopýtame sa na chýbajúce informácie,
                                                 objasníme veci a zodpovieme tvoje otázky.
                                             </p>
-                                            <div class="flex items-center gap-2 text-xs md:text-sm text-primary font-medium">
-                                                <i
-                                                    data-feather="target"
-                                                    class="w-3 h-3 md:w-4 md:h-4"></i>
+                                            <div class="flex items-center gap-2 text-sm text-tb-dark font-medium">
+                                                <i class="ri-focus-2-line"></i>
                                                 <span>Dotvorenie celého tvojho profilu</span>
                                             </div>
                                         </div>
@@ -322,36 +325,31 @@
 
                                 <!-- Step 4 -->
                                 <div class="group relative">
-                                    <div class="flex items-start gap-3 md:gap-6">
-                                        <!-- Timeline Badge -->
+                                    <div class="flex items-start gap-6">
                                         <div class="relative flex-shrink-0">
                                             <div
-                                                class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-secondary flex flex-col items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                                <i
-                                                    data-feather="award"
-                                                    class="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 mb-0.5 md:mb-1"></i>
-                                                <span class="text-xs md:text-sm font-bold">KROK 4</span>
+                                                class="w-24 h-24 bg-tb-dark-alt flex flex-col items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                                <i class="ri-award-line text-3xl mb-1"></i>
+                                                <span class="text-sm font-bold">KROK 4</span>
                                             </div>
                                         </div>
-
-                                        <!-- Content Card -->
                                         <div
-                                            class="flex-1 bg-white p-4 md:p-6 lg:p-8 border-2 border-talbri-peach/30 shadow-sm group-hover:shadow-xl group-hover:border-secondary/30 transition-all duration-300">
-                                            <div class="flex items-start justify-between mb-3 md:mb-4 gap-2">
-                                                <h4 class="text-lg md:text-xl lg:text-2xl font-bold text-primary">Už nikdy na to nie si sám</h4>
-                                                <span class="bg-secondary/10 text-secondary text-xs font-semibold px-2 md:px-3 py-1 whitespace-nowrap"
+                                            class="flex-1 bg-white p-8 border-2 border-tb-light-pink/30 shadow-sm group-hover:shadow-xl group-hover:border-tb-dark-alt/30 transition-all duration-300">
+                                            <div class="flex items-start justify-between mb-4 gap-2">
+                                                <h4 class="text-[32px] leading-10 font-medium tracking-[-0.02em] text-tb-dark">
+                                                    Už nikdy na to nie si sám
+                                                </h4>
+                                                <span class="bg-tb-dark-alt/10 text-tb-dark-alt text-xs font-semibold px-3 py-1 whitespace-nowrap"
                                                     >Priebežne</span
                                                 >
                                             </div>
-                                            <p class="text-sm md:text-base text-secondary leading-relaxed mb-3 md:mb-4">
+                                            <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark mb-4">
                                                 Stávaš sa súčasťou TalBri komunity, kde sa budeš môcť stretnúť s mladými ľuďmi z celého Slovenska a
                                                 zdielať spoločne vašu cestu. Priebežne tam budeme zdieľať aj tipy a triky, aby sme ťa pripravili na
                                                 pohovory s firmami.
                                             </p>
-                                            <div class="flex items-center gap-2 text-xs md:text-sm text-secondary font-medium">
-                                                <i
-                                                    data-feather="trending-up"
-                                                    class="w-3 h-3 md:w-4 md:h-4"></i>
+                                            <div class="flex items-center gap-2 text-sm text-tb-dark-alt font-medium">
+                                                <i class="ri-trending-up-line"></i>
                                                 <span>Vzájomné zdieľanie a rozvoj zručností</span>
                                             </div>
                                         </div>
@@ -360,35 +358,30 @@
 
                                 <!-- Step 5 -->
                                 <div class="group relative">
-                                    <div class="flex items-start gap-3 md:gap-6">
-                                        <!-- Timeline Badge -->
+                                    <div class="flex items-start gap-6">
                                         <div class="relative flex-shrink-0">
                                             <div
-                                                class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-secondary flex flex-col items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                                <i
-                                                    data-feather="link"
-                                                    class="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 mb-0.5 md:mb-1"></i>
-                                                <span class="text-xs md:text-sm font-bold">KROK 5</span>
+                                                class="w-24 h-24 bg-tb-dark-alt flex flex-col items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                                <i class="ri-link text-3xl mb-1"></i>
+                                                <span class="text-sm font-bold">KROK 5</span>
                                             </div>
                                         </div>
-
-                                        <!-- Content Card -->
                                         <div
-                                            class="flex-1 bg-white p-4 md:p-6 lg:p-8 border-2 border-talbri-peach/30 shadow-sm group-hover:shadow-xl group-hover:border-secondary/30 transition-all duration-300">
-                                            <div class="flex items-start justify-between mb-3 md:mb-4 gap-2">
-                                                <h4 class="text-lg md:text-xl lg:text-2xl font-bold text-primary">Matching a pohovory s firmami</h4>
-                                                <span class="bg-secondary/10 text-secondary text-xs font-semibold px-2 md:px-3 py-1 whitespace-nowrap"
+                                            class="flex-1 bg-white p-8 border-2 border-tb-light-pink/30 shadow-sm group-hover:shadow-xl group-hover:border-tb-dark-alt/30 transition-all duration-300">
+                                            <div class="flex items-start justify-between mb-4 gap-2">
+                                                <h4 class="text-[32px] leading-10 font-medium tracking-[-0.02em] text-tb-dark">
+                                                    Matching a pohovory s firmami
+                                                </h4>
+                                                <span class="bg-tb-dark-alt/10 text-tb-dark-alt text-xs font-semibold px-3 py-1 whitespace-nowrap"
                                                     >Apríl-Jún</span
                                                 >
                                             </div>
-                                            <p class="text-sm md:text-base text-secondary leading-relaxed mb-3 md:mb-4">
+                                            <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark mb-4">
                                                 Od apríla do júna ťa budeme párovať s príležitosťami a budú prebiehať výberové konania s našimi
                                                 partnerskými firmami
                                             </p>
-                                            <div class="flex items-center gap-2 text-xs md:text-sm text-secondary font-medium">
-                                                <i
-                                                    data-feather="briefcase"
-                                                    class="w-3 h-3 md:w-4 md:h-4"></i>
+                                            <div class="flex items-center gap-2 text-sm text-tb-dark-alt font-medium">
+                                                <i class="ri-briefcase-line"></i>
                                                 <span>Kariérne príležitosti</span>
                                             </div>
                                         </div>
@@ -397,34 +390,29 @@
 
                                 <!-- Step 6 -->
                                 <div class="group relative">
-                                    <div class="flex items-start gap-3 md:gap-6">
-                                        <!-- Timeline Badge -->
+                                    <div class="flex items-start gap-6">
                                         <div class="relative flex-shrink-0">
                                             <div
-                                                class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-secondary flex flex-col items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                                <i
-                                                    data-feather="message-circle"
-                                                    class="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 mb-0.5 md:mb-1"></i>
-                                                <span class="text-xs md:text-sm font-bold">KROK 6</span>
+                                                class="w-24 h-24 bg-tb-dark-alt flex flex-col items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                                <i class="ri-message-2-line text-3xl mb-1"></i>
+                                                <span class="text-sm font-bold">KROK 6</span>
                                             </div>
                                         </div>
-
-                                        <!-- Content Card -->
                                         <div
-                                            class="flex-1 bg-white p-4 md:p-6 lg:p-8 border-2 border-talbri-peach/30 shadow-sm group-hover:shadow-xl group-hover:border-secondary/30 transition-all duration-300">
-                                            <div class="flex items-start justify-between mb-3 md:mb-4 gap-2">
-                                                <h4 class="text-lg md:text-xl lg:text-2xl font-bold text-primary">Spätná väzba a rozvoj</h4>
-                                                <span class="bg-secondary/10 text-secondary text-xs font-semibold px-2 md:px-3 py-1 whitespace-nowrap"
+                                            class="flex-1 bg-white p-8 border-2 border-tb-light-pink/30 shadow-sm group-hover:shadow-xl group-hover:border-tb-dark-alt/30 transition-all duration-300">
+                                            <div class="flex items-start justify-between mb-4 gap-2">
+                                                <h4 class="text-[32px] leading-10 font-medium tracking-[-0.02em] text-tb-dark">
+                                                    Spätná väzba a rozvoj
+                                                </h4>
+                                                <span class="bg-tb-dark-alt/10 text-tb-dark-alt text-xs font-semibold px-3 py-1 whitespace-nowrap"
                                                     >Vždy</span
                                                 >
                                             </div>
-                                            <p class="text-sm md:text-base text-secondary leading-relaxed mb-3 md:mb-4">
+                                            <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark mb-4">
                                                 Garantujeme ti spätnú väzbu a profesionálny rast bez ohľadu na výsledok.
                                             </p>
-                                            <div class="flex items-center gap-2 text-xs md:text-sm text-secondary font-medium">
-                                                <i
-                                                    data-feather="star"
-                                                    class="w-3 h-3 md:w-4 md:h-4"></i>
+                                            <div class="flex items-center gap-2 text-sm text-tb-dark-alt font-medium">
+                                                <i class="ri-star-line"></i>
                                                 <span>Neustály rast</span>
                                             </div>
                                         </div>
@@ -436,60 +424,52 @@
 
                     <!-- For Companies -->
                     <div>
-                        <h3 class="text-xl md:text-2xl font-bold mb-8 md:mb-12 text-center text-primary">Pre firmy</h3>
-                        <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
+                        <h3 class="text-[32px] leading-10 font-medium tracking-[-0.02em] mb-12 text-center text-tb-dark">Pre firmy</h3>
+                        <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-8">
                             <div
-                                class="group bg-white p-6 md:p-8 border-2 border-talbri-peach/30 shadow-sm hover:shadow-xl hover:border-primary/30 transition-all duration-300 text-center">
+                                class="group bg-white p-8 border-2 border-tb-light-pink/30 shadow-sm hover:shadow-xl hover:border-tb-dark/30 transition-all duration-300 text-center">
                                 <div
-                                    class="w-16 h-16 md:w-20 md:h-20 bg-primary/5 flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
-                                    <i
-                                        data-feather="search"
-                                        class="w-8 h-8 md:w-10 md:h-10 text-primary"></i>
+                                    class="w-20 h-20 bg-tb-dark/5 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                    <i class="ri-search-line text-4xl text-tb-dark"></i>
                                 </div>
-                                <h4 class="text-lg md:text-xl font-bold mb-3 md:mb-4 text-primary">Vstupný rozhovor</h4>
-                                <p class="text-sm md:text-base text-secondary leading-relaxed">Akých mladých ľudí hľadáte?</p>
-                                <p class="text-sm md:text-base text-secondary leading-relaxed">Aké príležitosti ponúkate?</p>
-                                <p class="text-sm md:text-base text-secondary leading-relaxed">Akú víziu rastu ponúkate?</p>
+                                <h4 class="text-[32px] leading-10 font-medium tracking-[-0.02em] mb-4 text-tb-dark">Vstupný rozhovor</h4>
+                                <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">Akých mladých ľudí hľadáte?</p>
+                                <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">Aké príležitosti ponúkate?</p>
+                                <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">Akú víziu rastu ponúkate?</p>
                             </div>
 
                             <div
-                                class="group bg-white p-6 md:p-8 border-2 border-talbri-peach/30 shadow-sm hover:shadow-xl hover:border-secondary/30 transition-all duration-300 text-center">
+                                class="group bg-white p-8 border-2 border-tb-light-pink/30 shadow-sm hover:shadow-xl hover:border-tb-dark-alt/30 transition-all duration-300 text-center">
                                 <div
-                                    class="w-16 h-16 md:w-20 md:h-20 bg-secondary/5 flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
-                                    <i
-                                        data-feather="users"
-                                        class="w-8 h-8 md:w-10 md:h-10 text-secondary"></i>
+                                    class="w-20 h-20 bg-tb-dark-alt/5 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                    <i class="ri-team-line text-4xl text-tb-dark-alt"></i>
                                 </div>
-                                <h4 class="text-lg md:text-xl font-bold mb-3 md:mb-4 text-primary">Predstavenie kandidátov</h4>
-                                <p class="text-sm md:text-base text-secondary leading-relaxed">
+                                <h4 class="text-[32px] leading-10 font-medium tracking-[-0.02em] mb-4 text-tb-dark">Predstavenie kandidátov</h4>
+                                <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
                                     Na jednu pozíciu dostanete maximálne 3 profily kvalitných mladých ľudí, ktorí prešli naším procesom.
                                 </p>
                             </div>
 
                             <div
-                                class="group bg-white p-6 md:p-8 border-2 border-talbri-peach/30 shadow-sm hover:shadow-xl hover:border-primary/30 transition-all duration-300 text-center">
+                                class="group bg-white p-8 border-2 border-tb-light-pink/30 shadow-sm hover:shadow-xl hover:border-tb-dark/30 transition-all duration-300 text-center">
                                 <div
-                                    class="w-16 h-16 md:w-20 md:h-20 bg-primary/5 flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
-                                    <i
-                                        data-feather="bar-chart-2"
-                                        class="w-8 h-8 md:w-10 md:h-10 text-primary"></i>
+                                    class="w-20 h-20 bg-tb-dark/5 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                    <i class="ri-bar-chart-line text-4xl text-tb-dark"></i>
                                 </div>
-                                <h4 class="text-lg md:text-xl font-bold mb-3 md:mb-4 text-primary">Poskytnutie spätnej väzby</h4>
-                                <p class="text-sm md:text-base text-secondary leading-relaxed">
+                                <h4 class="text-[32px] leading-10 font-medium tracking-[-0.02em] mb-4 text-tb-dark">Poskytnutie spätnej väzby</h4>
+                                <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
                                     Vaša spätná väzba je kľúčová pre rozvoj silného talentové ekosystému na Slovensku.
                                 </p>
                             </div>
 
                             <div
-                                class="group bg-white p-6 md:p-8 border-2 border-talbri-peach/30 shadow-sm hover:shadow-xl hover:border-primary/30 transition-all duration-300 text-center">
+                                class="group bg-white p-8 border-2 border-tb-light-pink/30 shadow-sm hover:shadow-xl hover:border-tb-dark/30 transition-all duration-300 text-center">
                                 <div
-                                    class="w-16 h-16 md:w-20 md:h-20 bg-primary/5 flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
-                                    <i
-                                        data-feather="bar-chart-2"
-                                        class="w-8 h-8 md:w-10 md:h-10 text-primary"></i>
+                                    class="w-20 h-20 bg-tb-dark/5 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                    <i class="ri-bar-chart-line text-4xl text-tb-dark"></i>
                                 </div>
-                                <h4 class="text-lg md:text-xl font-bold mb-3 md:mb-4 text-primary">Obdržanie spätnej väzby</h4>
-                                <p class="text-sm md:text-base text-secondary leading-relaxed">
+                                <h4 class="text-[32px] leading-10 font-medium tracking-[-0.02em] mb-4 text-tb-dark">Obdržanie spätnej väzby</h4>
+                                <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
                                     Anonymizovaná spätná väzba na váš výberový proces od každého, kto ním prejde pre zlepšenie budúceho náboru.
                                 </p>
                             </div>
@@ -500,19 +480,34 @@
         </section>
 
         <!-- CTA Section -->
-        <section class="relative py-20 bg-primary overflow-hidden">
-            <div class="container mx-auto px-4 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Pripravení na transformáciu pracovného trhu na Slovensku?</h2>
-                <p class="text-xl text-white mb-10 max-w-3xl mx-auto">Poďte s nami do toho!</p>
+        <section class="relative py-[120px] bg-tb-dark overflow-hidden">
+            <!-- Ghost figures -->
+            <div class="absolute top-10 left-10 opacity-10 pointer-events-none hidden lg:block">
+                <img
+                    src="photos/Postava_2.svg"
+                    alt=""
+                    class="w-36 h-auto" />
+            </div>
+            <div class="absolute bottom-10 right-10 opacity-10 pointer-events-none hidden lg:block">
+                <img
+                    src="photos/Postava_3.svg"
+                    alt=""
+                    class="w-44 h-auto" />
+            </div>
+            <div class="max-w-[1440px] mx-auto px-20 text-center relative z-10">
+                <h2 class="text-[40px] leading-[48px] font-semibold tracking-[-0.02em] mb-4 text-white">
+                    Pripravení na transformáciu pracovného trhu na Slovensku?
+                </h2>
+                <p class="text-2xl leading-7 font-normal tracking-[-0.02em] text-white mb-16 max-w-3xl mx-auto">Poďte s nami do toho!</p>
                 <div class="flex flex-col sm:flex-row justify-center gap-4">
                     <a
                         href="#register"
-                        class="bg-white text-primary hover:bg-talbri-bg font-semibold py-3 px-8 transition duration-300 transform hover:scale-105">
+                        class="bg-tb-orange hover:bg-[#b33d11] text-white font-semibold text-base tracking-[-0.02em] px-6 py-3 rounded transition-colors">
                         Zaregistrujte sa do TalBri
                     </a>
                     <a
                         href="mailto:info@talbri.eu"
-                        class="bg-transparent border-2 border-white text-white hover:bg-white/10 font-semibold py-3 px-8 transition duration-300 transform hover:scale-105">
+                        class="bg-transparent border-2 border-white text-white hover:bg-white/10 font-semibold text-base tracking-[-0.02em] px-6 py-3 rounded transition-colors">
                         Spolupracujte s nami
                     </a>
                 </div>

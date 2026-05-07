@@ -11,23 +11,28 @@
             type="image/x-icon"
             href="/static/favicon.ico" />
         <script src="https://cdn.tailwindcss.com"></script>
-        <script src="https://unpkg.com/feather-icons"></script>
-        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
         <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+            rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
             rel="stylesheet" />
         <script>
             tailwind.config = {
                 theme: {
                     extend: {
                         colors: {
-                            primary: "#0C0E1B",
-                            secondary: "#1F212D",
-                            "talbri-cyan": "#ACDEEA",
-                            "talbri-peach": "#FBE8E1",
-                            "talbri-orange": "#CE4614",
-                            "talbri-purple": "#522DCB",
-                            "talbri-bg": "#FDF1ED",
+                            "tb-dark": "#0C0E1B",
+                            "tb-dark-alt": "#1F212D",
+                            "tb-light-blue": "#ACDEEA",
+                            "tb-sky": "#C0E6EF",
+                            "tb-light-pink": "#FBE8E1",
+                            "tb-cream": "#FDF1ED",
+                            "tb-orange": "#CE4614",
+                            "tb-purple-dark": "#522DCB",
+                            "tb-purple-mid": "#872DCB",
+                            "tb-cyan": "#268EC1",
+                            "tb-white": "#FFFFFF",
                         },
                     },
                 },
@@ -37,352 +42,372 @@
             href="../styles/main.css"
             rel="stylesheet" />
     </head>
-    <body class="bg-white text-secondary" data-base-path="../" data-page="pre-mladych">
+    <body
+        class="bg-white text-tb-dark font-['Outfit'] tracking-[-0.02em]"
+        data-base-path="../"
+        data-page="pre-mladych">
         <div id="header-root"></div>
 
         <!-- Hero Section -->
-        <section class="relative py-16 md:py-24 bg-talbri-peach overflow-hidden">
-            <div class="container mx-auto px-4 text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-primary relative z-10">
-                    <span>Pre mladých</span>
-                </h1>
-                <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-8 text-secondary relative z-10">Budujeme funkčný talentový ekosystém na Slovensku</p>
+        <section class="relative py-[120px] bg-tb-cyan overflow-hidden">
+            <!-- Decorative figures -->
+            <div class="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none hidden lg:block" style="filter: brightness(0) saturate(100%) invert(86%) sepia(14%) saturate(343%) hue-rotate(159deg) brightness(101%) contrast(96%);">
+                <img
+                    src="../photos/Postava_5.svg"
+                    alt=""
+                    class="w-72 h-auto" />
+            </div>
+            <div class="absolute left-0 bottom-0 pointer-events-none hidden lg:block" style="filter: brightness(0) saturate(100%) invert(86%) sepia(14%) saturate(343%) hue-rotate(159deg) brightness(101%) contrast(96%);">
+                <img
+                    src="../photos/Postava_6.svg"
+                    alt=""
+                    class="w-56 h-auto" />
+            </div>
+            <div class="max-w-[1440px] mx-auto px-20 text-center">
+                <h1 class="text-[56px] leading-[64px] font-bold tracking-[-0.02em] mb-4 text-tb-white relative z-10">Pre mladých</h1>
+                <p class="text-2xl leading-7 font-normal tracking-[-0.02em] max-w-3xl mx-auto text-tb-white relative z-10">
+                    Budujeme funkčný talentový ekosystém na Slovensku
+                </p>
             </div>
         </section>
 
         <!-- Main Content -->
-        <main class="container mx-auto px-4 py-12 max-w-4xl bg-white">
-            <!-- Hero Quote Section -->
-            <section class="mb-12">
-                <div class="bg-white p-8 md:p-12 shadow-sm border-2 border-talbri-peach/30 text-center">
-                    <p class="text-xl md:text-2xl text-secondary italic mb-4">
-                        Aby mladý talent nemusel odchádzať len preto, že sa nevie stretnúť s príležitosťou.
-                    </p>
-                    <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
-                    <p class="text-lg text-secondary mb-6">
-                        TalBri je pilotný program, ktorým zavádzame a overujeme nový spôsob fungovania trhu s mladým talentom na Slovensku.
-                    </p>
-                    <p class="text-lg text-secondary mb-6">
-                        Nejde o teóriu a víziu na papieri. Tento program sa stará o proces medzi mladým talentom, rozvojovými organizáciami a firmami.
-                    </p>
-                </div>
-            </section>
-
-            <!-- What Is Common -->
-            <section class="mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Čo je spoločné pre všetkých</h2>
-
-                <p class="text-secondary mb-6 leading-relaxed">Ide o časovo ohraničený pilot, do ktorého všetci vstupujú s vedomím, že:</p>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="text-center p-6 bg-primary/5">
-                        <i
-                            data-feather="activity"
-                            class="w-8 h-8 text-primary mx-auto mb-3"></i>
-                        <p class="font-bold text-primary">testujeme</p>
-                    </div>
-                    <div class="text-center p-6 bg-secondary/5">
-                        <i
-                            data-feather="map"
-                            class="w-8 h-8 text-secondary mx-auto mb-3"></i>
-                        <p class="font-bold text-primary">mapujeme</p>
-                    </div>
-                    <div class="text-center p-6 bg-primary/5">
-                        <i
-                            data-feather="book-open"
-                            class="w-8 h-8 text-primary mx-auto mb-3"></i>
-                        <p class="font-bold text-primary">učíme sa</p>
-                    </div>
-                </div>
-                <div class="mt-8 bg-primary p-6 text-white text-center">
-                    <p class="text-lg font-medium">
-                        Feedback nie je doplnok, ale je základ.<br />
-                        Dáta majú väčšiu váhu než dojmy.
-                    </p>
-                </div>
-            </section>
-
-            <!-- Our Role -->
-            <section class="mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Naša rola</h2>
-
-                <p class="text-secondary mb-6 leading-relaxed text-xl">Sme facilitátori procesu, aktívna súčasť systému.</p>
-                <div class="flex flex-col gap-6">
-                    <div class="flex items-start gap-3">
-                        <i
-                            data-feather="link"
-                            class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
-                        <p class="text-secondary">Prepájame strany.</p>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <i
-                            data-feather="shield"
-                            class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
-                        <p class="text-secondary">Strážime férovosť.</p>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <i
-                            data-feather="check-circle"
-                            class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
-                        <p class="text-secondary">Overujeme všetky strany - mladých, firmy, rozvojové organizácie.</p>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <i
-                            data-feather="bar-chart"
-                            class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
-                        <p class="text-secondary">Zbierame a vyhodnocujeme dáta.</p>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <i
-                            data-feather="trending-up"
-                            class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
-                        <p class="text-secondary">Poskytujeme odporúčania pre zlepšenie.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- What to Expect -->
-            <section class="mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Čo môžeš očakávať</h2>
-
-                <p class="text-secondary mb-6 leading-relaxed">
-                    Nie sme pracovný portál, kurz a ani motivačný program. TalBri je pilotný program pre mladých ľudí, ktorí chcú svoj talent premeniť
-                    na konkrétnu príležitosť. Proces je výberový a transparentný:
-                </p>
-                <div class="space-y-6">
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 bg-primary flex items-center justify-center flex-shrink-0">
-                            <span class="text-white text-xl font-bold">1</span>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold mb-2 text-primary">Vstupný formulár</h3>
-                            <p class="text-secondary">Vyplníš vstupný formulár (budeš potrebovať cca 30 minút na vyplnenie), doložíš CV a headshot.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 bg-secondary flex items-center justify-center flex-shrink-0">
-                            <span class="text-white text-xl font-bold">2</span>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold mb-2 text-primary">Psychometrické testy</h3>
-                            <p class="text-secondary">
-                                Následne ti bude zaslaný link na psychometrické testy (budeš potrebovať cca 90 minút na vyplnenie), ktoré budeš musieť
-                                do 2 týždňov urobiť.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 bg-primary flex items-center justify-center flex-shrink-0">
-                            <span class="text-white text-xl font-bold">3</span>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold mb-2 text-primary">Rozhovor s nami</h3>
-                            <p class="text-secondary">Do týždňa od obdržania výsledkov z testov, prejdeš rozhovorom s nami.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 bg-secondary flex items-center justify-center flex-shrink-0">
-                            <span class="text-white text-xl font-bold">4</span>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold mb-2 text-primary">Referencie</h3>
-                            <p class="text-secondary">Môžeme ťa poprosiť o dodanie referencie podľa potreby.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-primary/5 p-6 mt-8">
-                    <p class="text-secondary">Celým procesom ťa budeme sprevádzať a dávať ti tipy a triky, ako najlepšie uspieť v každom kroku.</p>
-                </div>
-            </section>
-
-            <!-- What You Get -->
-            <section class="mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Čo z toho máš ty - mladý talent?</h2>
-
-                <p class="text-secondary mb-6 leading-relaxed">
-                    My vidíme všetko tvoje úsilie a extra kroky, ktoré si už urobil/a. Tým, že si do seba investoval/a a ukázal/a, že chceš. Teraz
-                    chceme do teba investovať my a pomôcť ti tvoje nasadenie efektívne zúročiť a premeniť na reálnu príležitosť.
-                </p>
-                <p class="text-secondary mb-6 leading-relaxed">
-                    Nielenže sa za tvoje meno podpíšeme, ale týmto procesom ti aj dáme možnosť si vyskúšať, aké to je robiť testy a pohovory s firmami
-                    v bezpečnom prostredí. Robiť niečo prvý raz môže byť strašidelné. Preto sme náš proces nastavili tak, aby ťa v reálnom výberovom
-                    procese s firmou už nič neprekvapilo, lebo si mal možnosť si všetko odskúšať s nami.
-                </p>
-                <p class="font-bold mb-6 leading-relaxed">Zapojenie je otvorené od februára do konca apríla.</p>
-                <p class="text-secondary mb-6 leading-relaxed">
-                    Avšak pozor! Aby sme mohli zaručiť kvalitu a pozornosť každému individuálne,
-                    <b>do pilotného programu berieme len 100 mladých ľudí.</b>
-                    Čiže si registráciu nenechaj na poslednú chvíľu.
-                </p>
-                <p class="text-secondary mb-6 leading-relaxed">
-                    Tvoj proces s nami začína odoslaním formulára a oficialne si zaradený/á do TalBri po rozhovore s nami. Odvtedy sa stávaš aj
-                    súčasťou komunity TalBri na Discorde, kde sú ľudia ako ty z celého Slovenska.
-                </p>
-                <p>
-                    Matching proces začína po uzavretí prihlášok, preto, po úspešnom zmatchovaní, môžeš prvé pohovory s firmami očakávať od apríla. Ak
-                    budeš na pohovore úspešný/á, dátum nástupu do práce už bude predmetom dohody s firmou.
-                </p>
-            </section>
-
-            <!-- What We Guarantee -->
-            <section class="mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Čo ti garantujeme</h2>
-                <div class="bg-white p-8 md:p-10 shadow-sm border-2 border-primary/20">
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="flex items-start gap-3">
-                            <i
-                                data-feather="shield"
-                                class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
-                            <p class="text-secondary">
-                                <strong>eliminujeme akúkoľvek zaujatosť</strong> až do momentu, kým si ťa firma sama vyberie na osobné stretnutie
-                            </p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <i
-                                data-feather="eye"
-                                class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
-                            <p class="text-secondary"><strong>zviditeľňujeme firmám tvoje úspechy, znalosti, zručnosti</strong></p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <i
-                                data-feather="sliders"
-                                class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
-                            <p class="text-secondary"><strong>férové posúdenie</strong> na základe dát, nie sympatií</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <i
-                                data-feather="search"
-                                class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
-                            <p class="text-secondary"><strong>aktívny matching</strong>, žiadne pasívne čakanie</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <i
-                                data-feather="heart"
-                                class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
-                            <p class="text-secondary"><strong>facilitácia a podpora</strong> počas celého procesu z našej strany</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <i
-                                data-feather="message-square"
-                                class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
-                            <p class="text-secondary"><strong>spätná väzba</strong>, ktorá ťa posunie ďalej, aj keď to nevyjde na prvý raz</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <i
-                                data-feather="check-circle"
-                                class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
-                            <p class="text-secondary">
-                                <strong>nami overenú firmu</strong>, ktorá ti vie reálne poskytnúť príležitosť (áno aj firmy si u nás prechádzajú
-                                vstupným a výberovým rozhovorom)
-                            </p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <i
-                                data-feather="users"
-                                class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
-                            <p class="text-secondary">
-                                <strong>komunitu ľudí z celého Slovenska,</strong> ktorí sú v tom istom bode na ich kariérnej ceste ako si ty
-                            </p>
-                        </div>
-                    </div>
-                    <div class="bg-primary p-6 text-white mt-8 text-center">
-                        <p class="text-lg font-medium">
-                            U nás nie si ďalšie CV v databáze. Si človek s potenciálom, ktorý ti chceme pomôcť rozvinúť a preto to berieme vážne.
+        <main class="max-w-[1440px] mx-auto px-20 py-[120px] bg-white">
+            <div class="max-w-4xl mx-auto">
+                <!-- Hero Quote Section -->
+                <section class="mb-16">
+                    <div class="bg-white p-12 shadow-sm border-2 border-tb-light-pink/30 text-center">
+                        <p class="text-2xl leading-7 font-normal tracking-[-0.02em] text-tb-dark italic mb-4">
+                            Aby mladý talent nemusel odchádzať len preto, že sa nevie stretnúť s príležitosťou.
+                        </p>
+                        <p class="text-2xl leading-7 font-normal tracking-[-0.02em] text-tb-dark mb-6">
+                            TalBri je pilotný program, ktorým zavádzame a overujeme nový spôsob fungovania trhu s mladým talentom na Slovensku.
+                        </p>
+                        <p class="text-2xl leading-7 font-normal tracking-[-0.02em] text-tb-dark mb-6">
+                            Nejde o teóriu a víziu na papieri. Tento program sa stará o proces medzi mladým talentom, rozvojovými organizáciami a
+                            firmami.
                         </p>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <!-- Our Promise -->
-            <section class="mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Tvoj vstup do programu</h2>
+                <!-- What Is Common -->
+                <section class="mb-16">
+                    <h2 class="text-[40px] leading-[48px] font-semibold tracking-[-0.02em] mb-6 text-tb-dark">Čo je spoločné pre všetkých</h2>
 
-                <p class="text-secondary mb-6 leading-relaxed">
-                    Tvoj vstup do programu nie je o tom, že ťa len niekam dostaneme. Je o tom, že v systéme nezostaneš sám. A aj keď to tento raz
-                    nevyjde, vieš presne prečo, a teda ako pokračovať.
-                </p>
-                <div class="bg-talbri-bg p-6 text-center">
-                    <p class="text-xl text-secondary italic mb-2">Toto nie je rýchla výhra.</p>
-                    <p class="text-lg text-secondary">Je to systematické pokračovanie tvojej dlhodobej cesty, ktoré naštartuje tvoju kariéru.</p>
-                </div>
-            </section>
-
-            <!-- References Section -->
-            <section class="mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-primary">Referencie - povedali o nás</h2>
-                <div class="bg-white p-8 md:p-10 shadow-sm border-2 border-talbri-peach/30 space-y-8">
-                    <div class="border-b border-talbri-peach/50 pb-6 last:border-0">
-                        <div>
-                            <h4 class="font-bold text-primary">20 ročný chlapec z Košíc</h4>
-                            <p class="text-sm text-secondary/70">Po stretnutí na Future Generation Europe - Mini Erasmus</p>
-                            <p class="text-sm text-primary font-medium">Zaujíma sa o IT</p>
-                            <img
-                                src="../photos/20r-kosice.png"
-                                alt="Reference 1"
-                                class="w-96 mt-2" />
-                        </div>
-                    </div>
-
-                    <div class="border-b border-talbri-peach/50 pb-6 last:border-0">
-                        <div>
-                            <h4 class="font-bold text-primary">24 ročná slečna z Bratislavy</h4>
-                            <p class="text-sm text-secondary/70">Dostala odporúčanie od kamarátky</p>
-                            <p class="text-sm text-secondary font-medium">Zaujíma sa o konzulting a biznis</p>
-                            <img
-                                src="../photos/24r-bratislava.png"
-                                alt="Reference 1"
-                                class="mt-2" />
-                        </div>
-                    </div>
-
-                    <div class="border-b border-talbri-peach/50 pb-6 last:border-0">
-                        <div>
-                            <h4 class="font-bold text-primary">25 ročná slečna z Bratislavy</h4>
-                            <p class="text-sm text-secondary/70">Dozvedela sa o nás skrz Nexteriu</p>
-                            <p class="text-sm text-primary font-medium">Zaujíma sa o eventový manažment a právo</p>
-                            <img
-                                src="../photos/25r-bratislava.png"
-                                alt="Reference 1"
-                                class="mt-2" />
-                        </div>
-                    </div>
-
-                    <div>
-                        <div>
-                            <h4 class="font-bold text-primary">27 ročná slečna z Banskej Bystrice</h4>
-                            <p class="text-sm text-secondary/70">Jedna z našich mentee. Donedávna si nebola istá, kam chce v živote rásť</p>
-                            <img
-                                src="../photos/27r-bb.png"
-                                alt="Reference 1"
-                                class="mt-2" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- CTA -->
-            <section class="text-center">
-                <div class="bg-primary p-8 md:p-12 text-white mb-12 relative overflow-hidden">
-                    <!-- Decorative Postava SVGs -->
-                    <div class="absolute top-5 left-5 opacity-10 pointer-events-none hidden lg:block">
-                        <img src="../photos/Postava_11.svg" alt="" class="w-28 h-auto" />
-                    </div>
-                    <div class="absolute bottom-5 right-5 opacity-10 pointer-events-none hidden lg:block">
-                        <img src="../photos/Postava_12.svg" alt="" class="w-36 h-auto" />
-                    </div>
-                    <h2 class="text-2xl md:text-3xl font-bold mb-4">Pripravený začať svoju cestu?</h2>
-                    <p class="text-lg mb-8 opacity-90">
-                        Registrácia do pilotného programu je otvorená od februára do konca apríla. Do programu berieme len 100 mladých ľudí - nenechaj
-                        si registráciu na poslednú chvíľu!
+                    <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark mb-6">
+                        Ide o časovo ohraničený pilot, do ktorého všetci vstupujú s vedomím, že:
                     </p>
-                    <div class="flex flex-col sm:flex-row justify-center gap-4">
-                        <a
-                            href="https://forms.gle/VTuZQNBtCiM8iBEg6"
-                            class="bg-white text-primary hover:bg-talbri-bg font-semibold py-3 px-8 transition text-center">
-                            Zaregistrovať sa pomocou Google Forms
-                        </a>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center p-6 bg-tb-cyan/10">
+                            <i class="ri-pulse-line text-3xl text-tb-cyan mx-auto mb-3 block"></i>
+                            <p class="font-bold text-tb-dark">testujeme</p>
+                        </div>
+                        <div class="text-center p-6 bg-tb-dark-alt/5">
+                            <i class="ri-map-pin-line text-3xl text-tb-dark-alt mx-auto mb-3 block"></i>
+                            <p class="font-bold text-tb-dark">mapujeme</p>
+                        </div>
+                        <div class="text-center p-6 bg-tb-cyan/10">
+                            <i class="ri-book-open-line text-3xl text-tb-cyan mx-auto mb-3 block"></i>
+                            <p class="font-bold text-tb-dark">učíme sa</p>
+                        </div>
                     </div>
-                </div>
-            </section>
+                    <div class="mt-8 bg-tb-dark p-6 text-white text-center">
+                        <p class="text-2xl leading-7 font-medium tracking-[-0.02em]">
+                            Feedback nie je doplnok, ale je základ.<br />
+                            Dáta majú väčšiu váhu než dojmy.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Our Role -->
+                <section class="mb-16">
+                    <h2 class="text-[40px] leading-[48px] font-semibold tracking-[-0.02em] mb-6 text-tb-dark">Naša rola</h2>
+
+                    <p class="text-2xl leading-7 font-normal tracking-[-0.02em] text-tb-dark mb-6">
+                        Sme facilitátori procesu, aktívna súčasť systému.
+                    </p>
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-start gap-3">
+                            <i class="ri-link text-2xl text-tb-cyan flex-shrink-0 mt-1"></i>
+                            <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">Prepájame strany.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="ri-shield-line text-2xl text-tb-cyan flex-shrink-0 mt-1"></i>
+                            <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">Strážime férovosť.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="ri-checkbox-circle-line text-2xl text-tb-cyan flex-shrink-0 mt-1"></i>
+                            <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
+                                Overujeme všetky strany - mladých, firmy, rozvojové organizácie.
+                            </p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="ri-bar-chart-line text-2xl text-tb-cyan flex-shrink-0 mt-1"></i>
+                            <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">Zbierame a vyhodnocujeme dáta.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="ri-trending-up-line text-2xl text-tb-cyan flex-shrink-0 mt-1"></i>
+                            <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">Poskytujeme odporúčania pre zlepšenie.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- What to Expect -->
+                <section class="mb-16">
+                    <h2 class="text-[40px] leading-[48px] font-semibold tracking-[-0.02em] mb-6 text-tb-dark">Čo môžeš očakávať</h2>
+
+                    <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark mb-6">
+                        Nie sme pracovný portál, kurz a ani motivačný program. TalBri je pilotný program pre mladých ľudí, ktorí chcú svoj talent
+                        premeniť na konkrétnu príležitosť. Proces je výberový a transparentný:
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-tb-dark flex items-center justify-center flex-shrink-0">
+                                <span class="text-white text-xl font-bold">1</span>
+                            </div>
+                            <div>
+                                <h3 class="text-[32px] leading-10 font-medium tracking-[-0.02em] mb-2 text-tb-dark">Vstupný formulár</h3>
+                                <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
+                                    Vyplníš vstupný formulár (budeš potrebovať cca 30 minút na vyplnenie), doložíš CV a headshot.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-tb-dark-alt flex items-center justify-center flex-shrink-0">
+                                <span class="text-white text-xl font-bold">2</span>
+                            </div>
+                            <div>
+                                <h3 class="text-[32px] leading-10 font-medium tracking-[-0.02em] mb-2 text-tb-dark">Psychometrické testy</h3>
+                                <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
+                                    Následne ti bude zaslaný link na psychometrické testy (budeš potrebovať cca 90 minút na vyplnenie), ktoré budeš
+                                    musieť do 2 týždňov urobiť.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-tb-dark flex items-center justify-center flex-shrink-0">
+                                <span class="text-white text-xl font-bold">3</span>
+                            </div>
+                            <div>
+                                <h3 class="text-[32px] leading-10 font-medium tracking-[-0.02em] mb-2 text-tb-dark">Rozhovor s nami</h3>
+                                <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
+                                    Do týždňa od obdržania výsledkov z testov, prejdeš rozhovorom s nami.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-tb-dark-alt flex items-center justify-center flex-shrink-0">
+                                <span class="text-white text-xl font-bold">4</span>
+                            </div>
+                            <div>
+                                <h3 class="text-[32px] leading-10 font-medium tracking-[-0.02em] mb-2 text-tb-dark">Referencie</h3>
+                                <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
+                                    Môžeme ťa poprosiť o dodanie referencie podľa potreby.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-tb-cyan/10 p-6 mt-8">
+                        <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
+                            Celým procesom ťa budeme sprevádzať a dávať ti tipy a triky, ako najlepšie uspieť v každom kroku.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- What You Get -->
+                <section class="mb-16">
+                    <h2 class="text-[40px] leading-[48px] font-semibold tracking-[-0.02em] mb-6 text-tb-dark">Čo z toho máš ty - mladý talent?</h2>
+
+                    <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark mb-6">
+                        My vidíme všetko tvoje úsilie a extra kroky, ktoré si už urobil/a. Tým, že si do seba investoval/a a ukázal/a, že chceš. Teraz
+                        chceme do teba investovať my a pomôcť ti tvoje nasadenie efektívne zúročiť a premeniť na reálnu príležitosť.
+                    </p>
+                    <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark mb-6">
+                        Nielenže sa za tvoje meno podpíšeme, ale týmto procesom ti aj dáme možnosť si vyskúšať, aké to je robiť testy a pohovory s
+                        firmami v bezpečnom prostredí. Robiť niečo prvý raz môže byť strašidelné. Preto sme náš proces nastavili tak, aby ťa v reálnom
+                        výberovom procese s firmou už nič neprekvapilo, lebo si mal možnosť si všetko odskúšať s nami.
+                    </p>
+                    <p class="font-bold text-base leading-5 tracking-[-0.02em] text-tb-dark mb-6">
+                        Zapojenie je otvorené od februára do konca apríla.
+                    </p>
+                    <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark mb-6">
+                        Avšak pozor! Aby sme mohli zaručiť kvalitu a pozornosť každému individuálne,
+                        <b>do pilotného programu berieme len 100 mladých ľudí.</b>
+                        Čiže si registráciu nenechaj na poslednú chvíľu.
+                    </p>
+                    <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark mb-6">
+                        Tvoj proces s nami začína odoslaním formulára a oficialne si zaradený/á do TalBri po rozhovore s nami. Odvtedy sa stávaš aj
+                        súčasťou komunity TalBri na Discorde, kde sú ľudia ako ty z celého Slovenska.
+                    </p>
+                    <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
+                        Matching proces začína po uzavretí prihlášok, preto, po úspešnom zmatchovaní, môžeš prvé pohovory s firmami očakávať od
+                        apríla. Ak budeš na pohovore úspešný/á, dátum nástupu do práce už bude predmetom dohody s firmou.
+                    </p>
+                </section>
+
+                <!-- What We Guarantee -->
+                <section class="mb-16">
+                    <h2 class="text-[40px] leading-[48px] font-semibold tracking-[-0.02em] mb-6 text-tb-dark">Čo ti garantujeme</h2>
+                    <div class="bg-white p-10 shadow-sm border-2 border-tb-cyan/20">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="flex items-start gap-3">
+                                <i class="ri-shield-line text-2xl text-tb-cyan flex-shrink-0 mt-1"></i>
+                                <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
+                                    <strong>eliminujeme akúkoľvek zaujatosť</strong> až do momentu, kým si ťa firma sama vyberie na osobné stretnutie
+                                </p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="ri-eye-line text-2xl text-tb-cyan flex-shrink-0 mt-1"></i>
+                                <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
+                                    <strong>zviditeľňujeme firmám tvoje úspechy, znalosti, zručnosti</strong>
+                                </p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="ri-equalizer-line text-2xl text-tb-cyan flex-shrink-0 mt-1"></i>
+                                <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
+                                    <strong>férové posúdenie</strong> na základe dát, nie sympatií
+                                </p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="ri-search-line text-2xl text-tb-cyan flex-shrink-0 mt-1"></i>
+                                <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
+                                    <strong>aktívny matching</strong>, žiadne pasívne čakanie
+                                </p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="ri-heart-line text-2xl text-tb-cyan flex-shrink-0 mt-1"></i>
+                                <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
+                                    <strong>facilitácia a podpora</strong> počas celého procesu z našej strany
+                                </p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="ri-message-2-line text-2xl text-tb-cyan flex-shrink-0 mt-1"></i>
+                                <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
+                                    <strong>spätná väzba</strong>, ktorá ťa posunie ďalej, aj keď to nevyjde na prvý raz
+                                </p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="ri-checkbox-circle-line text-2xl text-tb-cyan flex-shrink-0 mt-1"></i>
+                                <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
+                                    <strong>nami overenú firmu</strong>, ktorá ti vie reálne poskytnúť príležitosť (áno aj firmy si u nás prechádzajú
+                                    vstupným a výberovým rozhovorom)
+                                </p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="ri-team-line text-2xl text-tb-cyan flex-shrink-0 mt-1"></i>
+                                <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
+                                    <strong>komunitu ľudí z celého Slovenska,</strong> ktorí sú v tom istom bode na ich kariérnej ceste ako si ty
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-tb-dark p-6 text-white mt-8 text-center">
+                            <p class="text-2xl leading-7 font-medium tracking-[-0.02em]">
+                                U nás nie si ďalšie CV v databáze. Si človek s potenciálom, ktorý ti chceme pomôcť rozvinúť a preto to berieme vážne.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Our Promise -->
+                <section class="mb-16">
+                    <h2 class="text-[40px] leading-[48px] font-semibold tracking-[-0.02em] mb-6 text-tb-dark">Tvoj vstup do programu</h2>
+
+                    <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark mb-6">
+                        Tvoj vstup do programu nie je o tom, že ťa len niekam dostaneme. Je o tom, že v systéme nezostaneš sám. A aj keď to tento raz
+                        nevyjde, vieš presne prečo, a teda ako pokračovať.
+                    </p>
+                    <div class="bg-tb-cream p-6 text-center">
+                        <p class="text-2xl leading-7 font-normal tracking-[-0.02em] text-tb-dark italic mb-2">Toto nie je rýchla výhra.</p>
+                        <p class="text-2xl leading-7 font-normal tracking-[-0.02em] text-tb-dark">
+                            Je to systematické pokračovanie tvojej dlhodobej cesty, ktoré naštartuje tvoju kariéru.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- References Section -->
+                <section class="mb-16">
+                    <h2 class="text-[40px] leading-[48px] font-semibold tracking-[-0.02em] mb-8 text-tb-dark">Referencie - povedali o nás</h2>
+                    <div class="bg-white p-10 shadow-sm border-2 border-tb-light-pink/30 space-y-8">
+                        <div class="border-b border-tb-light-pink/50 pb-6 last:border-0">
+                            <div>
+                                <h4 class="font-bold text-tb-dark">20 ročný chlapec z Košíc</h4>
+                                <p class="text-sm text-tb-dark/70">Po stretnutí na Future Generation Europe - Mini Erasmus</p>
+                                <p class="text-sm text-tb-cyan font-medium">Zaujíma sa o IT</p>
+                                <img
+                                    src="../photos/20r-kosice.png"
+                                    alt="Reference 1"
+                                    class="w-96 mt-2" />
+                            </div>
+                        </div>
+
+                        <div class="border-b border-tb-light-pink/50 pb-6 last:border-0">
+                            <div>
+                                <h4 class="font-bold text-tb-dark">24 ročná slečna z Bratislavy</h4>
+                                <p class="text-sm text-tb-dark/70">Dostala odporúčanie od kamarátky</p>
+                                <p class="text-sm text-tb-dark-alt font-medium">Zaujíma sa o konzulting a biznis</p>
+                                <img
+                                    src="../photos/24r-bratislava.png"
+                                    alt="Reference 1"
+                                    class="mt-2" />
+                            </div>
+                        </div>
+
+                        <div class="border-b border-tb-light-pink/50 pb-6 last:border-0">
+                            <div>
+                                <h4 class="font-bold text-tb-dark">25 ročná slečna z Bratislavy</h4>
+                                <p class="text-sm text-tb-dark/70">Dozvedela sa o nás skrz Nexteriu</p>
+                                <p class="text-sm text-tb-cyan font-medium">Zaujíma sa o eventový manažment a právo</p>
+                                <img
+                                    src="../photos/25r-bratislava.png"
+                                    alt="Reference 1"
+                                    class="mt-2" />
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <h4 class="font-bold text-tb-dark">27 ročná slečna z Banskej Bystrice</h4>
+                                <p class="text-sm text-tb-dark/70">Jedna z našich mentee. Donedávna si nebola istá, kam chce v živote rásť</p>
+                                <img
+                                    src="../photos/27r-bb.png"
+                                    alt="Reference 1"
+                                    class="mt-2" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CTA -->
+                <section class="text-center">
+                    <div class="bg-tb-dark p-12 text-white mb-16 relative overflow-hidden">
+                        <!-- Ghost figures -->
+                        <div class="absolute top-5 left-5 opacity-10 pointer-events-none hidden lg:block">
+                            <img
+                                src="../photos/Postava_11.svg"
+                                alt=""
+                                class="w-28 h-auto" />
+                        </div>
+                        <div class="absolute bottom-5 right-5 opacity-10 pointer-events-none hidden lg:block">
+                            <img
+                                src="../photos/Postava_12.svg"
+                                alt=""
+                                class="w-36 h-auto" />
+                        </div>
+                        <h2 class="text-[40px] leading-[48px] font-semibold tracking-[-0.02em] mb-4">Pripravený začať svoju cestu?</h2>
+                        <p class="text-2xl leading-7 font-normal tracking-[-0.02em] mb-16 opacity-90">
+                            Registrácia do pilotného programu je otvorená od februára do konca apríla. Do programu berieme len 100 mladých ľudí -
+                            nenechaj si registráciu na poslednú chvíľu!
+                        </p>
+                        <div class="flex flex-col sm:flex-row justify-center gap-4">
+                            <a
+                                href="https://forms.gle/VTuZQNBtCiM8iBEg6"
+                                class="inline-block bg-tb-orange hover:bg-[#b33d11] text-white font-semibold text-base tracking-[-0.02em] px-6 py-3 rounded transition-colors">
+                                Zaregistrovať sa pomocou Google Forms
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
 
         <div id="team-root"></div>

@@ -11,23 +11,28 @@
             type="image/x-icon"
             href="/static/favicon.ico" />
         <script src="https://cdn.tailwindcss.com"></script>
-        <script src="https://unpkg.com/feather-icons"></script>
-        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
         <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+            rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
             rel="stylesheet" />
         <script>
             tailwind.config = {
                 theme: {
                     extend: {
                         colors: {
-                            primary: "#0C0E1B",
-                            secondary: "#1F212D",
-                            "talbri-cyan": "#ACDEEA",
-                            "talbri-peach": "#FBE8E1",
-                            "talbri-orange": "#CE4614",
-                            "talbri-purple": "#522DCB",
-                            "talbri-bg": "#FDF1ED",
+                            "tb-dark": "#0C0E1B",
+                            "tb-dark-alt": "#1F212D",
+                            "tb-light-blue": "#ACDEEA",
+                            "tb-sky": "#C0E6EF",
+                            "tb-light-pink": "#FBE8E1",
+                            "tb-cream": "#FDF1ED",
+                            "tb-orange": "#CE4614",
+                            "tb-purple-dark": "#522DCB",
+                            "tb-purple-mid": "#872DCB",
+                            "tb-cyan": "#268EC1",
+                            "tb-white": "#FFFFFF",
                         },
                     },
                 },
@@ -38,352 +43,359 @@
             rel="stylesheet" />
     </head>
     <body
-        class="bg-white text-secondary"
+        class="bg-white text-tb-dark font-['Outfit'] tracking-[-0.02em]"
         data-base-path="../"
         data-page="pre-organizacie">
         <div id="header-root"></div>
 
         <!-- Hero Section -->
-        <section class="relative py-16 md:py-24 bg-talbri-peach overflow-hidden">
-            <div class="container mx-auto px-4 text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-primary relative z-10">
-                    <span>Pre organizácie a akadémie</span>
-                </h1>
-                <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-8 text-secondary relative z-10">
+        <section class="relative py-[120px] bg-tb-purple-dark overflow-hidden">
+            <!-- Decorative figures -->
+            <div class="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none hidden lg:block opacity-30">
+                <img
+                    src="../photos/Postava_9.svg"
+                    alt=""
+                    class="w-72 h-auto" />
+            </div>
+            <div class="absolute left-0 bottom-0 pointer-events-none hidden lg:block opacity-25">
+                <img
+                    src="../photos/Postava_10.svg"
+                    alt=""
+                    class="w-56 h-auto" />
+            </div>
+            <div class="max-w-[1440px] mx-auto px-20 text-center">
+                <h1 class="text-[56px] leading-[64px] font-bold tracking-[-0.02em] mb-4 text-tb-white relative z-10">Pre organizácie a akadémie</h1>
+                <p class="text-2xl leading-7 font-normal tracking-[-0.02em] max-w-3xl mx-auto text-tb-white relative z-10">
                     Budujeme funkčný talentový ekosystém na Slovensku
                 </p>
             </div>
         </section>
 
         <!-- Main Content -->
-        <main class="container mx-auto px-4 py-12 max-w-4xl bg-white">
-            <!-- Hero Quote Section -->
-            <section class="mb-12">
-                <div class="bg-white p-8 md:p-12 shadow-sm border-2 border-talbri-peach/30 text-center">
-                    <p class="text-xl md:text-2xl text-secondary italic mb-4">
-                        Aby mladý talent nemusel odchádzať len preto, že sa nevie stretnúť s príležitosťou.
+        <main class="max-w-[1440px] mx-auto px-20 py-[120px] bg-white">
+            <div class="max-w-4xl mx-auto">
+                <!-- Hero Quote Section -->
+                <section class="mb-16">
+                    <div class="bg-white p-12 shadow-sm border-2 border-tb-light-pink/30 text-center">
+                        <p class="text-2xl leading-7 font-normal tracking-[-0.02em] text-tb-dark italic mb-4">
+                            Aby mladý talent nemusel odchádzať len preto, že sa nevie stretnúť s príležitosťou.
+                        </p>
+                        <p class="text-2xl leading-7 font-normal tracking-[-0.02em] text-tb-dark mb-6">
+                            TalBri je pilotný program, ktorým zavádzame a overujeme nový spôsob fungovania trhu s mladým talentom na Slovensku.
+                        </p>
+                        <p class="text-2xl leading-7 font-normal tracking-[-0.02em] text-tb-dark mb-6">
+                            Nejde o teóriu a víziu na papieri. <b>Tento program sa stará o proces</b> medzi mladým talentom, rozvojovými organizáciami
+                            a firmami.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- What Is Common -->
+                <section class="mb-16">
+                    <h2 class="text-[40px] leading-[48px] font-semibold tracking-[-0.02em] mb-6 text-tb-dark">Čo je spoločné pre všetkých</h2>
+
+                    <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark mb-6">
+                        Ide o časovo ohraničený pilot, všetci vstupujú s vedomím, že:
                     </p>
-                    <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
-                    <p class="text-lg text-secondary mb-6">
-                        TalBri je pilotný program, ktorým zavádzame a overujeme nový spôsob fungovania trhu s mladým talentom na Slovensku.
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center p-6 bg-tb-purple-dark/10">
+                            <i class="ri-pulse-line text-3xl text-tb-purple-dark mx-auto mb-3 block"></i>
+                            <p class="font-bold text-tb-dark">testujeme</p>
+                        </div>
+                        <div class="text-center p-6 bg-tb-dark-alt/5">
+                            <i class="ri-map-pin-line text-3xl text-tb-dark-alt mx-auto mb-3 block"></i>
+                            <p class="font-bold text-tb-dark">mapujeme</p>
+                        </div>
+                        <div class="text-center p-6 bg-tb-purple-dark/10">
+                            <i class="ri-book-open-line text-3xl text-tb-purple-dark mx-auto mb-3 block"></i>
+                            <p class="font-bold text-tb-dark">učíme sa</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 bg-tb-dark p-6 text-white text-center">
+                        <p class="text-2xl leading-7 font-medium tracking-[-0.02em]">
+                            Feedback nie je doplnok, ale je základ.<br />
+                            Dáta majú väčšiu váhu než dojmy.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Our Role -->
+                <section class="mb-16">
+                    <h2 class="text-[40px] leading-[48px] font-semibold tracking-[-0.02em] mb-6 text-tb-dark">Naša rola</h2>
+
+                    <p class="text-2xl leading-7 font-normal tracking-[-0.02em] text-tb-dark mb-6">
+                        Sme facilitátori procesu, aktívna súčasť systému.
                     </p>
-                    <p class="text-lg text-secondary mb-6">
-                        Nejde o teóriu a víziu na papieri. <b>Tento program sa stará o proces</b> medzi mladým talentom, rozvojovými organizáciami a
-                        firmami.
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-start gap-3">
+                            <i class="ri-link text-2xl text-tb-purple-dark flex-shrink-0 mt-1"></i>
+                            <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">Prepájame strany.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="ri-shield-line text-2xl text-tb-purple-dark flex-shrink-0 mt-1"></i>
+                            <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">Strážime férovosť.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="ri-checkbox-circle-line text-2xl text-tb-purple-dark flex-shrink-0 mt-1"></i>
+                            <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
+                                Overujeme všetky strany - mladých, firmy, rozvojové organizácie.
+                            </p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="ri-bar-chart-line text-2xl text-tb-purple-dark flex-shrink-0 mt-1"></i>
+                            <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">Zbierame a vyhodnocujeme dáta.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="ri-trending-up-line text-2xl text-tb-purple-dark flex-shrink-0 mt-1"></i>
+                            <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">Poskytujeme odporúčania pre zlepšenie.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- What You Get -->
+                <section class="mb-16">
+                    <h2 class="text-[40px] leading-[48px] font-semibold tracking-[-0.02em] mb-6 text-tb-dark">Čo z toho má rozvojová organizácia?</h2>
+
+                    <h3 class="text-[32px] leading-10 font-medium tracking-[-0.02em] mb-6 text-tb-dark">
+                        Dopad sa nekončí workshopom. Začína uplatnením.
+                    </h3>
+                    <p class="text-2xl leading-7 font-normal tracking-[-0.02em] text-tb-dark mb-6">
+                        Slovensko má kvalitné vzdelávacie a rozvojové iniciatívy. Má univerzity, akadémie, NGO a programy, ktoré roky investujú do
+                        mladých ľudí.
                     </p>
-                </div>
-            </section>
-
-            <!-- What Is Common -->
-            <section class="mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Čo je spoločné pre všetkých</h2>
-
-                <p class="text-secondary mb-6 leading-relaxed">Ide o časovo ohraničený pilot, všetci vstupujú s vedomím, že:</p>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="text-center p-6 bg-primary/5">
-                        <i
-                            data-feather="activity"
-                            class="w-8 h-8 text-primary mx-auto mb-3"></i>
-                        <p class="font-bold text-primary">testujeme</p>
-                    </div>
-                    <div class="text-center p-6 bg-secondary/5">
-                        <i
-                            data-feather="map"
-                            class="w-8 h-8 text-secondary mx-auto mb-3"></i>
-                        <p class="font-bold text-primary">mapujeme</p>
-                    </div>
-                    <div class="text-center p-6 bg-primary/5">
-                        <i
-                            data-feather="book-open"
-                            class="w-8 h-8 text-primary mx-auto mb-3"></i>
-                        <p class="font-bold text-primary">učíme sa</p>
-                    </div>
-                </div>
-                <div class="mt-8 bg-primary p-6 text-white text-center">
-                    <p class="text-lg font-medium">
-                        Feedback nie je doplnok, ale je základ.<br />
-                        Dáta majú väčšiu váhu než dojmy.
+                    <p class="text-2xl leading-7 font-normal tracking-[-0.02em] text-tb-dark mb-6">
+                        Čo však systému chýba, je odpoveď na jednoduchú otázku: <strong>Aký to má dopad a prečo?</strong> Našim cieľom je túto medzeru
+                        chceme vyplniť.
                     </p>
-                </div>
-            </section>
+                </section>
 
-            <section class="mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Naša rola</h2>
+                <!-- Why We Invite -->
+                <section class="mb-16">
+                    <h2 class="text-[40px] leading-[48px] font-semibold tracking-[-0.02em] mb-6 text-tb-dark">Prečo vás pozývame do ekosystému</h2>
+                    <h3 class="text-[32px] leading-10 font-medium tracking-[-0.02em] mb-6 text-tb-dark">Ste kľúčová časť riešenia.</h3>
 
-                <p class="text-secondary mb-6 leading-relaxed text-xl">Sme facilitátori procesu, aktívna súčasť systému.</p>
-                <div class="flex flex-col gap-6">
-                    <div class="flex items-start gap-3">
-                        <i
-                            data-feather="link"
-                            class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
-                        <p class="text-secondary">Prepájame strany.</p>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <i
-                            data-feather="shield"
-                            class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
-                        <p class="text-secondary">Strážime férovosť.</p>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <i
-                            data-feather="check-circle"
-                            class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
-                        <p class="text-secondary">Overujeme všetky strany - mladých, firmy, rozvojové organizácie.</p>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <i
-                            data-feather="bar-chart"
-                            class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
-                        <p class="text-secondary">Zbierame a vyhodnocujeme dáta.</p>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <i
-                            data-feather="trending-up"
-                            class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
-                        <p class="text-secondary">Poskytujeme odporúčania pre zlepšenie.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- What You Get -->
-            <section class="mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Čo z toho má rozvojová organizácia?</h2>
-
-                <h3 class="text-xl font-bold mb-6">Dopad sa nekončí workshopom. Začína uplatnením.</h3>
-                <p class="text-secondary mb-6 leading-relaxed text-lg">
-                    Slovensko má kvalitné vzdelávacie a rozvojové iniciatívy. Má univerzity, akadémie, NGO a programy, ktoré roky investujú do mladých
-                    ľudí.
-                </p>
-                <p class="text-secondary mb-6 leading-relaxed text-lg">
-                    Čo však systému chýba, je odpoveď na jednoduchú otázku: <strong>Aký to má dopad a prečo?</strong> Našim cieľom je túto medzeru
-                    chceme vyplniť.
-                </p>
-            </section>
-
-            <!-- Why We Invite -->
-            <section class="mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Prečo vás pozývame do ekosystému</h2>
-                <h3 class="text-xl font-bold mb-6">Ste kľúčová časť riešenia.</h3>
-
-                <p class="text-secondary mb-2 leading-relaxed">Váš dopad však dnes:</p>
-                <ul class="space-y-3 mb-6 ml-5 list-disc">
-                    <li class="flex items-start gap-2 text-secondary">
-                        <i
-                            data-feather="alert-circle"
-                            class="w-5 h-5 text-white/50 flex-shrink-0 mt-1"></i>
-                        <span>často končí certifikátom alebo záverečnou prezentáciou,</span>
-                    </li>
-                    <li class="flex items-start gap-2 text-secondary">
-                        <i
-                            data-feather="alert-circle"
-                            class="w-5 h-5 text-white/50 flex-shrink-0 mt-1"></i>
-                        <span>nie je systematicky trackovaný,</span>
-                    </li>
-                    <li class="flex items-start gap-2 text-secondary">
-                        <i
-                            data-feather="alert-circle"
-                            class="w-5 h-5 text-white/50 flex-shrink-0 mt-1"></i>
-                        <span>sa ťažko prekladá do dát pre donorov, partnerov a verejný sektor.</span>
-                    </li>
-                </ul>
-
-                <div class="bg-secondary/20 border-l-4 border-primary p-6 mt-8">
-                    <p class="text-secondary font-medium">My staviame <strong>most založený na dátach medzi rozvojom a uplatnením.</strong></p>
-                </div>
-            </section>
-
-            <!-- Your Role -->
-            <section class="mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Akú úlohu zohrávate v pilotnom projekte</h2>
-
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div>
-                        <h3 class="text-lg font-bold mb-3 text-primary">Pre nás:</h3>
-                        <ul class="space-y-2 text-secondary text-sm">
-                            <li class="flex items-start gap-2">
-                                <i
-                                    data-feather="x"
-                                    class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5"></i>
-                                <span>nie ste len dodávateľ talentu</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i
-                                    data-feather="x"
-                                    class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5"></i>
-                                <span>nie ste mimo procesu po jeho skončení</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i
-                                    data-feather="x"
-                                    class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5"></i>
-                                <span>nie ste hodnotení izolovane</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i
-                                    data-feather="check-circle"
-                                    class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5"></i>
-                                <span>ste kritickí <strong>partneri a hýbnou silou v dizajne a kvalite trhu práce.</strong></span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-bold mb-3 text-primary">V TalBri:</h3>
-                        <ul class="space-y-2 text-secondary text-sm">
-                            <li class="flex items-start gap-2">
-                                <i
-                                    data-feather="check-circle"
-                                    class="w-4 h-4 text-primary flex-shrink-0 mt-0.5"></i>
-                                <span>vystupujete ako zdroj a kurátori talentu</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i
-                                    data-feather="check-circle"
-                                    class="w-4 h-4 text-primary flex-shrink-0 mt-0.5"></i>
-                                <span>nominujete alebo odporúčate účastníkov s potenciálom</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i
-                                    data-feather="check-circle"
-                                    class="w-4 h-4 text-primary flex-shrink-0 mt-0.5"></i>
-                                <span>ste súčasťou spätno-väzbovej slučky medzi trhom a vzdelávaním</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="bg-secondary/20 border-l-4 border-primary p-6 mt-8">
-                    <p class="text-secondary font-medium">Neberieme vám pozíciu. Zvyšujeme a poukazujeme na váhu vašej práce.</p>
-                </div>
-            </section>
-
-            <!-- Benefits -->
-            <section class="mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Čo z partnerstva získavate</h2>
-
-                <div>
-                    <ul class="space-y-2 text-secondary">
+                    <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark mb-2">Váš dopad však dnes:</p>
+                    <ul class="space-y-3 mb-6 ml-5">
                         <li class="flex items-start gap-2">
-                            <i
-                                data-feather="check-circle"
-                                class="w-4 h-4 text-primary flex-shrink-0 mt-0.5"></i>
-                            <span><strong>jasné dáta o reálnom uplatnení vašich absolventov / účastníkov,</strong></span>
+                            <i class="ri-alert-line text-xl text-tb-purple-dark flex-shrink-0 mt-0.5"></i>
+                            <span class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark"
+                                >často končí certifikátom alebo záverečnou prezentáciou,</span
+                            >
                         </li>
                         <li class="flex items-start gap-2">
-                            <i
-                                data-feather="check-circle"
-                                class="w-4 h-4 text-primary flex-shrink-0 mt-0.5"></i>
-                            <span>spätnú väzbu od firiem, ktorá ide nad rámec „bol/ nebol dobrý“, </span>
+                            <i class="ri-alert-line text-xl text-tb-purple-dark flex-shrink-0 mt-0.5"></i>
+                            <span class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">nie je systematicky trackovaný,</span>
                         </li>
                         <li class="flex items-start gap-2">
-                            <i
-                                data-feather="check-circle"
-                                class="w-4 h-4 text-primary flex-shrink-0 mt-0.5"></i>
-                            <span>podklady pre: <strong>granty, donorov a strategické rozhodovanie,</strong></span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <i
-                                data-feather="check-circle"
-                                class="w-4 h-4 text-primary flex-shrink-0 mt-0.5"></i>
-                            <span>silnejšie postavenie v talentovom ekosystéme. </span>
+                            <i class="ri-alert-line text-xl text-tb-purple-dark flex-shrink-0 mt-0.5"></i>
+                            <span class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark"
+                                >sa ťažko prekladá do dát pre donorov, partnerov a verejný sektor.</span
+                            >
                         </li>
                     </ul>
-                </div>
-            </section>
 
-            <!-- Shared Responsibility -->
-            <section class="mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Spoločná zodpovednosť</h2>
+                    <div class="bg-tb-dark-alt/20 border-l-4 border-tb-purple-dark p-6 mt-8">
+                        <p class="text-base leading-5 font-medium tracking-[-0.02em] text-tb-dark">
+                            My staviame <strong>most založený na dátach medzi rozvojom a uplatnením.</strong>
+                        </p>
+                    </div>
+                </section>
 
-                <p class="text-secondary mb-6 leading-relaxed">Pilotný projekt funguje len vtedy, keď:</p>
-                <div class="space-y-4 ml-5 list-disc">
-                    <div class="flex items-start gap-3">
-                        <i
-                            data-feather="share-2"
-                            class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
-                        <p class="text-secondary"><strong>zdieľame dáta</strong> (v rámci dohodnutých a etických hraníc)</p>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <i
-                            data-feather="message-square"
-                            class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
-                        <p class="text-secondary"><strong>aktívne pracujeme so spätnou väzbou</strong></p>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <i
-                            data-feather="trending-up"
-                            class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
-                        <p class="text-secondary"><strong>upravujeme programy</strong> na základe dát a posilňovaní spolupráce</p>
-                    </div>
-                </div>
-                <p class="text-secondary mt-6">
-                    Nečakáme, že veci budú perfektné a o to ani nejde. Ide o spoločné
-                    <strong>učenie sa a zlepšovanie toho, čo už dnes robíme s láskou a víziou.</strong>
-                </p>
-            </section>
+                <!-- Your Role -->
+                <section class="mb-16">
+                    <h2 class="text-[40px] leading-[48px] font-semibold tracking-[-0.02em] mb-6 text-tb-dark">
+                        Akú úlohu zohrávate v pilotnom projekte
+                    </h2>
 
-            <!-- Timeline -->
-            <section class="mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">Časový rámec pilotu</h2>
-                <div class="bg-white p-8 md:p-10 shadow-sm border-2 border-talbri-peach/30">
-                    <div class="space-y-6">
-                        <div class="border-l-4 border-primary pl-6 py-2">
-                            <h3 class="text-xl font-bold text-primary">Február - Marec</h3>
-                            <ul class="ml-6 text-secondary text-sm space-y-1 mt-2">
-                                <li>• registrácia do pilotu začína v týždni od 16. februára</li>
-                                <li>• mladí si prechádzajú našim procesom</li>
-                                <li>• plánované končenie registrácii – 29. apríla</li>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-[32px] leading-10 font-medium tracking-[-0.02em] mb-3 text-tb-dark">Pre nás:</h3>
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-start gap-2">
+                                    <i class="ri-close-line text-lg text-red-500 flex-shrink-0 mt-0.5"></i>
+                                    <span class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">nie ste len dodávateľ talentu</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="ri-close-line text-lg text-red-500 flex-shrink-0 mt-0.5"></i>
+                                    <span class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark"
+                                        >nie ste mimo procesu po jeho skončení</span
+                                    >
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="ri-close-line text-lg text-red-500 flex-shrink-0 mt-0.5"></i>
+                                    <span class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">nie ste hodnotení izolovane</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="ri-checkbox-circle-line text-lg text-green-500 flex-shrink-0 mt-0.5"></i>
+                                    <span class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark"
+                                        >ste kritickí <strong>partneri a hýbnou silou v dizajne a kvalite trhu práce.</strong></span
+                                    >
+                                </li>
                             </ul>
                         </div>
-                        <div class="border-l-4 border-secondary pl-6 py-2">
-                            <h3 class="text-xl font-bold text-primary">Apríl - Jún</h3>
-                            <ul class="ml-6 text-secondary text-sm space-y-1 mt-2">
-                                <li>• aktívny matching</li>
-                                <li>• priame pohovory medzi mladým talentom a firmou</li>
-                                <li>• ak bol výberový proces úspešný, nástup do práce už je predmetom dohody</li>
-                            </ul>
-                        </div>
-                        <div class="border-l-4 border-primary pl-6 py-2">
-                            <h3 class="text-xl font-bold text-primary">Od Júna</h3>
-                            <ul class="ml-6 text-secondary text-sm space-y-1 mt-2">
-                                <li>• spracovanie výsledkov</li>
-                                <li>• reálne čísla a dopady</li>
-                                <li>• jasné závery</li>
-                                <li>• rozhodnutie o škálovaní a pokračovaní v spolupráci</li>
+                        <div>
+                            <h3 class="text-[32px] leading-10 font-medium tracking-[-0.02em] mb-3 text-tb-dark">V TalBri:</h3>
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-start gap-2">
+                                    <i class="ri-checkbox-circle-line text-lg text-tb-purple-dark flex-shrink-0 mt-0.5"></i>
+                                    <span class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark"
+                                        >vystupujete ako zdroj a kurátori talentu</span
+                                    >
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="ri-checkbox-circle-line text-lg text-tb-purple-dark flex-shrink-0 mt-0.5"></i>
+                                    <span class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark"
+                                        >nominujete alebo odporúčate účastníkov s potenciálom</span
+                                    >
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="ri-checkbox-circle-line text-lg text-tb-purple-dark flex-shrink-0 mt-0.5"></i>
+                                    <span class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark"
+                                        >ste súčasťou spätno-väzbovej slučky medzi trhom a vzdelávaním</span
+                                    >
+                                </li>
                             </ul>
                         </div>
                     </div>
-                </div>
-            </section>
+                    <div class="bg-tb-dark-alt/20 border-l-4 border-tb-purple-dark p-6 mt-8">
+                        <p class="text-base leading-5 font-medium tracking-[-0.02em] text-tb-dark">
+                            Neberieme vám pozíciu. Zvyšujeme a poukazujeme na váhu vašej práce.
+                        </p>
+                    </div>
+                </section>
 
-            <!-- Final Message -->
-            <section class="mb-12">
-                <div class="bg-primary p-8 md:p-12 text-center text-white relative overflow-hidden">
-                    <!-- Decorative Postava SVGs -->
-                    <div class="absolute top-5 left-5 opacity-10 pointer-events-none hidden lg:block">
-                        <img
-                            src="../photos/Postava_8.svg"
-                            alt=""
-                            class="w-28 h-auto" />
+                <!-- Benefits -->
+                <section class="mb-16">
+                    <h2 class="text-[40px] leading-[48px] font-semibold tracking-[-0.02em] mb-6 text-tb-dark">Čo z partnerstva získavate</h2>
+
+                    <div>
+                        <ul class="space-y-2">
+                            <li class="flex items-start gap-2">
+                                <i class="ri-checkbox-circle-line text-lg text-tb-purple-dark flex-shrink-0 mt-0.5"></i>
+                                <span class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark"
+                                    ><strong>jasné dáta o reálnom uplatnení vašich absolventov / účastníkov,</strong></span
+                                >
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="ri-checkbox-circle-line text-lg text-tb-purple-dark flex-shrink-0 mt-0.5"></i>
+                                <span class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark"
+                                    >spätnú väzbu od firiem, ktorá ide nad rámec „bol/ nebol dobrý“,
+                                </span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="ri-checkbox-circle-line text-lg text-tb-purple-dark flex-shrink-0 mt-0.5"></i>
+                                <span class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark"
+                                    >podklady pre: <strong>granty, donorov a strategické rozhodovanie,</strong></span
+                                >
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="ri-checkbox-circle-line text-lg text-tb-purple-dark flex-shrink-0 mt-0.5"></i>
+                                <span class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark"
+                                    >silnejšie postavenie v talentovom ekosystéme.
+                                </span>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="absolute bottom-5 right-5 opacity-10 pointer-events-none hidden lg:block">
-                        <img
-                            src="../photos/Postava_9.svg"
-                            alt=""
-                            class="w-36 h-auto" />
+                </section>
+
+                <!-- Shared Responsibility -->
+                <section class="mb-16">
+                    <h2 class="text-[40px] leading-[48px] font-semibold tracking-[-0.02em] mb-6 text-tb-dark">Spoločná zodpovednosť</h2>
+
+                    <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark mb-6">Pilotný projekt funguje len vtedy, keď:</p>
+                    <div class="space-y-4 ml-5">
+                        <div class="flex items-start gap-3">
+                            <i class="ri-share-line text-2xl text-tb-purple-dark flex-shrink-0 mt-1"></i>
+                            <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
+                                <strong>zdieľame dáta</strong> (v rámci dohodnutých a etických hraníc)
+                            </p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="ri-message-2-line text-2xl text-tb-purple-dark flex-shrink-0 mt-1"></i>
+                            <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
+                                <strong>aktívne pracujeme so spätnou väzbou</strong>
+                            </p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="ri-trending-up-line text-2xl text-tb-purple-dark flex-shrink-0 mt-1"></i>
+                            <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark">
+                                <strong>upravujeme programy</strong> na základe dát a posilňovaní spolupráce
+                            </p>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-bold mb-6">Záverečný postoj</h3>
-                    <p class="text-xl mb-4 leading-relaxed">
-                        Ak chceme, aby mladí ľudia zostali na Slovensku a menili ho k lepšiemu, musíme prestať zámerne izolovať a ochraňovať
-                        jednotlivé projekty. Musíme ich začať prepájať v optimalizovanom talentovom ekosystéme.
+                    <p class="text-base leading-5 font-normal tracking-[-0.02em] text-tb-dark mt-6">
+                        Nečakáme, že veci budú perfektné a o to ani nejde. Ide o spoločné
+                        <strong>učenie sa a zlepšovanie toho, čo už dnes robíme s láskou a víziou.</strong>
                     </p>
-                    <p class="text-xl mt-6 mb-2 italic">Vzdelávanie bez uplatnenia je neúplné. Uplatnenie bez kontextu je krátkozraké.</p>
-                    <p class="text-2xl font-bold mt-4 mb-6">Poďme to konečne prepojiť - od A po Z.</p>
-                    <a
-                        href="mailto:info@talbri.eu"
-                        class="inline-block bg-white text-primary hover:bg-talbri-bg font-semibold py-4 px-10 transition text-lg">
-                        Kontaktujte nás
-                    </a>
-                </div>
-            </section>
+                </section>
+
+                <!-- Timeline -->
+                <section class="mb-16">
+                    <h2 class="text-[40px] leading-[48px] font-semibold tracking-[-0.02em] mb-6 text-tb-dark">Časový rámec pilotu</h2>
+                    <div class="bg-white p-10 shadow-sm border-2 border-tb-light-pink/30">
+                        <div class="space-y-6">
+                            <div class="border-l-4 border-tb-purple-dark pl-6 py-2">
+                                <h3 class="text-[32px] leading-10 font-medium tracking-[-0.02em] text-tb-dark">Február - Marec</h3>
+                                <ul class="ml-6 text-tb-dark text-sm space-y-1 mt-2">
+                                    <li>• registrácia do pilotu začína v týždni od 16. februára</li>
+                                    <li>• mladí si prechádzajú našim procesom</li>
+                                    <li>• plánované končenie registrácii – 29. apríla</li>
+                                </ul>
+                            </div>
+                            <div class="border-l-4 border-tb-dark-alt pl-6 py-2">
+                                <h3 class="text-[32px] leading-10 font-medium tracking-[-0.02em] text-tb-dark">Apríl - Jún</h3>
+                                <ul class="ml-6 text-tb-dark text-sm space-y-1 mt-2">
+                                    <li>• aktívny matching</li>
+                                    <li>• priame pohovory medzi mladým talentom a firmou</li>
+                                    <li>• ak bol výberový proces úspešný, nástup do práce už je predmetom dohody</li>
+                                </ul>
+                            </div>
+                            <div class="border-l-4 border-tb-purple-dark pl-6 py-2">
+                                <h3 class="text-[32px] leading-10 font-medium tracking-[-0.02em] text-tb-dark">Od Júna</h3>
+                                <ul class="ml-6 text-tb-dark text-sm space-y-1 mt-2">
+                                    <li>• spracovanie výsledkov</li>
+                                    <li>• reálne čísla a dopady</li>
+                                    <li>• jasné závery</li>
+                                    <li>• rozhodnutie o škálovaní a pokračovaní v spolupráci</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Final Message -->
+                <section class="mb-16">
+                    <div class="bg-tb-dark p-12 text-center text-white relative overflow-hidden">
+                        <!-- Ghost figures -->
+                        <div class="absolute top-5 left-5 opacity-10 pointer-events-none hidden lg:block">
+                            <img
+                                src="../photos/Postava_8.svg"
+                                alt=""
+                                class="w-28 h-auto" />
+                        </div>
+                        <div class="absolute bottom-5 right-5 opacity-10 pointer-events-none hidden lg:block">
+                            <img
+                                src="../photos/Postava_9.svg"
+                                alt=""
+                                class="w-36 h-auto" />
+                        </div>
+                        <h3 class="text-[40px] leading-[48px] font-semibold tracking-[-0.02em] mb-6">Záverečný postoj</h3>
+                        <p class="text-2xl leading-7 font-normal tracking-[-0.02em] mb-4">
+                            Ak chceme, aby mladí ľudia zostali na Slovensku a menili ho k lepšiemu, musíme prestať zámerne izolovať a ochraňovať
+                            jednotlivé projekty. Musíme ich začať prepájať v optimalizovanom talentovom ekosystéme.
+                        </p>
+                        <p class="text-2xl leading-7 font-normal tracking-[-0.02em] mt-6 mb-2 italic">
+                            Vzdelávanie bez uplatnenia je neúplné. Uplatnenie bez kontextu je krátkozraké.
+                        </p>
+                        <p class="text-[40px] leading-[48px] font-semibold tracking-[-0.02em] mt-4 mb-16">Poďme to konečne prepojiť - od A po Z.</p>
+                        <a
+                            href="mailto:info@talbri.eu"
+                            class="inline-block bg-tb-orange hover:bg-[#b33d11] text-white font-semibold text-base tracking-[-0.02em] px-6 py-3 rounded transition-colors">
+                            Kontaktujte nás
+                        </a>
+                    </div>
+                </section>
+            </div>
         </main>
 
         <div id="team-root"></div>
